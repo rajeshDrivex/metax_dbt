@@ -9,7 +9,6 @@
 
 {{ config(
   materialized='table',
-  schema='CLEANED_DATA'
 ) }}
 
 WITH source_data AS (

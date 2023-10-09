@@ -1,1 +1,1 @@
-{"_invocation_id": "c29d041f-195b-4366-95c8-25b633026d05", "linked": {"0": {"name": "model.invx1.My_second_dbt", "type": "model"}, "1": {"name": "model.invx1.procurement", "type": "model"}}}
+{"_invocation_id": "08cbadd8-5168-44d7-924c-40a85c0aac5a", "linked": {"0": {"name": "model.invx1.My_second_dbt", "type": "model"}, "1": {"name": "model.invx1.procurement", "type": "model"}}}
