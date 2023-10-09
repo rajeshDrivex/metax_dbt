@@ -7,11 +7,11 @@ models:
     depends_on:
       - source: AIRBYTE_SCHEMA.CONFIRMATIONS
 
-# models:
-#   - name: My_second_dbt
-#     description: "A starter dbt model"
-#     depends_on:
-#       - source: AIRBYTE_SCHEMA.CONFIRMATIONS
+models:
+  - name: My_second_dbt
+    description: "A starter dbt model"
+    depends_on:
+      - source: AIRBYTE_SCHEMA.CONFIRMATIONS
 
   # - name: my_second_dbt_model
   #   description: "A starter dbt model"

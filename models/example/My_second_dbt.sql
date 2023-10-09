@@ -17,16 +17,16 @@
 --  FROM AIRBYTE_SCHEMA.CONFIRMATIONS
 --  -- You can include any additional transformations here
 -- )
--- WITH source_data AS (
---   SELECT
---     "REG.NO" AS Registration_number,
---     "MAKE" AS BRAND,
---     "MODEL" AS MODEL
---   FROM AIRBYTE_SCHEMA.CONFIRMATIONS
+WITH source_data AS (
+  SELECT
+    "REG.NO" AS Registration_number,
+    "MAKE" AS BRAND,
+    "MODEL" AS MODEL
+  FROM AIRBYTE_SCHEMA.CONFIRMATIONS
 
--- )
--- SELECT *
--- FROM source_data
+)
+SELECT *
+FROM source_data
 
 /*
     Uncomment the line below to remove records with null `id` values
