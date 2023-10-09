@@ -9,9 +9,9 @@ invx1:
       password: Mahesh1998@
 
       role: ACCOUNTADMIN
-      database: AIRBYTE_DATABASE
-      warehouse: AIRBYTE_WAREHOUSE
-      schema: AIRBYTE_SCHEMA_DBT
+      database: INVX_DATABASE
+      warehouse: INVX_WAREHOUSE
+      schema: CLEANED_DATA
       threads: 10
       client_session_keep_alive: False
       # query_tag: [anything]
