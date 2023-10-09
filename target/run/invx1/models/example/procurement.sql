@@ -2,7 +2,7 @@
   
     
 
-        create or replace transient table INVX_DATABASE.CLEANED_DATA_CLEANED_DATA.procurement
+        create or replace transient table INVX_DATABASE.CLEANED_DATA.procurement
          as
         (/*
     Welcome to your first dbt model!

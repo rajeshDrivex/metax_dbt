@@ -1,1 +1,1 @@
-{"_invocation_id": "08cbadd8-5168-44d7-924c-40a85c0aac5a", "linked": {"0": {"name": "model.invx1.My_second_dbt", "type": "model"}, "1": {"name": "model.invx1.procurement", "type": "model"}}}
+{"_invocation_id": "4a1f4dae-5f37-4cb1-b444-92a983ccc74f", "linked": {"0": {"name": "model.invx1.documentation_dbt", "type": "model"}, "1": {"name": "model.invx1.logistics_dbt", "type": "model"}, "2": {"name": "model.invx1.sales_dbt", "type": "model"}, "3": {"name": "model.invx1.procurement", "type": "model"}, "4": {"name": "model.invx1.dtc_dbt", "type": "model"}}}

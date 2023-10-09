@@ -3006,3 +3006,1988 @@ Runtime Error
 [0m16:03:49.278406 [debug] [MainThread]: Command `dbt run` failed at 16:03:49.278325 after 0.13 seconds
 [0m16:03:49.278692 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2477486d40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2474714640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f2474715720>]}
 [0m16:03:49.278970 [debug] [MainThread]: Flushing usage events
+[0m17:18:55.861550 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fead6c8acb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fead51d3ac0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fead51d3a30>]}
+
+
+============================== 17:18:55.885150 | 8bff4f19-cec1-4d5a-bcce-f0011fe1b54b ==============================
+[0m17:18:55.885150 [info ] [MainThread]: Running with dbt=1.6.3
+[0m17:18:55.885657 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/home/lap10/Desktop/InvX/logs', 'profiles_dir': '/home/lap10/Desktop/InvX', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m17:18:55.999288 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8bff4f19-cec1-4d5a-bcce-f0011fe1b54b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fead5d61bd0>]}
+[0m17:18:56.004741 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8bff4f19-cec1-4d5a-bcce-f0011fe1b54b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fead3f1bca0>]}
+[0m17:18:56.005580 [info ] [MainThread]: Registered adapter: snowflake=1.6.3
+[0m17:18:56.011279 [debug] [MainThread]: checksum: 800ab10c53db38b54e69cd328777f0c48b6374b8a89466e8ff54aa9acb452b75, vars: {}, profile: , target: , version: 1.6.3
+[0m17:18:56.024194 [debug] [MainThread]: Partial parsing enabled: 1 files deleted, 4 files added, 2 files changed.
+[0m17:18:56.024791 [debug] [MainThread]: Partial parsing: added file: invx1://models/example/dtc_dbt.sql
+[0m17:18:56.025092 [debug] [MainThread]: Partial parsing: added file: invx1://models/example/documentation_dbt.sql
+[0m17:18:56.025333 [debug] [MainThread]: Partial parsing: added file: invx1://models/example/logistics_dbt.sql
+[0m17:18:56.025559 [debug] [MainThread]: Partial parsing: added file: invx1://models/example/sales_dbt.sql
+[0m17:18:56.025880 [debug] [MainThread]: Partial parsing: updated file: invx1://models/example/schema.yml
+[0m17:18:56.026113 [debug] [MainThread]: Partial parsing: deleted file: invx1://models/example/My_second_dbt.sql
+[0m17:18:56.026428 [debug] [MainThread]: Partial parsing: updated file: invx1://models/example/procurement.sql
+[0m17:18:56.060337 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'DOCUMENTATION' in the 'models' section of file 'models/example/schema.yml'
+[0m17:18:56.062177 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'SALES' in the 'models' section of file 'models/example/schema.yml'
+[0m17:18:56.062967 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'DTC' in the 'models' section of file 'models/example/schema.yml'
+[0m17:18:56.063732 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'LOGISTICS' in the 'models' section of file 'models/example/schema.yml'
+[0m17:18:56.069700 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8bff4f19-cec1-4d5a-bcce-f0011fe1b54b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feacfbdcf10>]}
+[0m17:18:56.075988 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8bff4f19-cec1-4d5a-bcce-f0011fe1b54b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fead14492d0>]}
+[0m17:18:56.076421 [info ] [MainThread]: Found 5 models, 0 sources, 0 exposures, 0 metrics, 372 macros, 0 groups, 0 semantic models
+[0m17:18:56.076698 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8bff4f19-cec1-4d5a-bcce-f0011fe1b54b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fead1449270>]}
+[0m17:18:56.077808 [info ] [MainThread]: 
+[0m17:18:56.078373 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m17:18:56.079316 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_INVX_DATABASE'
+[0m17:18:56.088157 [debug] [ThreadPool]: Using snowflake connection "list_INVX_DATABASE"
+[0m17:18:56.088568 [debug] [ThreadPool]: On list_INVX_DATABASE: /* {"app": "dbt", "dbt_version": "1.6.3", "profile_name": "invx1", "target_name": "dev", "connection_name": "list_INVX_DATABASE"} */
+show terse schemas in database INVX_DATABASE
+    limit 10000
+[0m17:18:56.088830 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:18:56.724649 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1.0 seconds
+[0m17:18:56.727196 [debug] [ThreadPool]: On list_INVX_DATABASE: Close
+[0m17:18:56.824342 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_INVX_DATABASE, now list_INVX_DATABASE_CLEANED_DATA)
+[0m17:18:56.834908 [debug] [ThreadPool]: Using snowflake connection "list_INVX_DATABASE_CLEANED_DATA"
+[0m17:18:56.835210 [debug] [ThreadPool]: On list_INVX_DATABASE_CLEANED_DATA: /* {"app": "dbt", "dbt_version": "1.6.3", "profile_name": "invx1", "target_name": "dev", "connection_name": "list_INVX_DATABASE_CLEANED_DATA"} */
+show terse objects in INVX_DATABASE.CLEANED_DATA limit 10000
+[0m17:18:56.835421 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:18:57.155197 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 0.0 seconds
+[0m17:18:57.158683 [debug] [ThreadPool]: On list_INVX_DATABASE_CLEANED_DATA: Close
+[0m17:18:57.259269 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8bff4f19-cec1-4d5a-bcce-f0011fe1b54b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fead1433dc0>]}
+[0m17:18:57.259890 [info ] [MainThread]: Concurrency: 10 threads (target='dev')
+[0m17:18:57.260167 [info ] [MainThread]: 
+[0m17:18:57.304271 [debug] [Thread-1 (]: Began running node model.invx1.documentation_dbt
+[0m17:18:57.305075 [debug] [Thread-2 (]: Began running node model.invx1.dtc_dbt
+[0m17:18:57.305647 [info ] [Thread-1 (]: 1 of 5 START sql table model CLEANED_DATA.documentation_dbt .................... [RUN]
+[0m17:18:57.306348 [info ] [Thread-2 (]: 2 of 5 START sql table model CLEANED_DATA.dtc_dbt .............................. [RUN]
+[0m17:18:57.306696 [debug] [Thread-3 (]: Began running node model.invx1.logistics_dbt
+[0m17:18:57.307114 [debug] [Thread-4 (]: Began running node model.invx1.procurement
+[0m17:18:57.307928 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_INVX_DATABASE_CLEANED_DATA, now model.invx1.documentation_dbt)
+[0m17:18:57.308516 [debug] [Thread-5 (]: Began running node model.invx1.sales_dbt
+[0m17:18:57.309227 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.invx1.dtc_dbt'
+[0m17:18:57.309749 [info ] [Thread-3 (]: 3 of 5 START sql table model CLEANED_DATA.logistics_dbt ........................ [RUN]
+[0m17:18:57.310136 [info ] [Thread-4 (]: 4 of 5 START sql table model CLEANED_DATA.procurement .......................... [RUN]
+[0m17:18:57.310574 [debug] [Thread-1 (]: Began compiling node model.invx1.documentation_dbt
+[0m17:18:57.311196 [info ] [Thread-5 (]: 5 of 5 START sql table model CLEANED_DATA.sales_dbt ............................ [RUN]
+[0m17:18:57.311693 [debug] [Thread-2 (]: Began compiling node model.invx1.dtc_dbt
+[0m17:18:57.312488 [debug] [Thread-3 (]: Acquiring new snowflake connection 'model.invx1.logistics_dbt'
+[0m17:18:57.313188 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.invx1.procurement'
+[0m17:18:57.319238 [debug] [Thread-1 (]: Writing injected SQL for node "model.invx1.documentation_dbt"
+[0m17:18:57.320227 [debug] [Thread-5 (]: Acquiring new snowflake connection 'model.invx1.sales_dbt'
+[0m17:18:57.323265 [debug] [Thread-2 (]: Writing injected SQL for node "model.invx1.dtc_dbt"
+[0m17:18:57.323847 [debug] [Thread-3 (]: Began compiling node model.invx1.logistics_dbt
+[0m17:18:57.324411 [debug] [Thread-4 (]: Began compiling node model.invx1.procurement
+[0m17:18:57.324935 [debug] [Thread-5 (]: Began compiling node model.invx1.sales_dbt
+[0m17:18:57.325839 [debug] [Thread-2 (]: Timing info for model.invx1.dtc_dbt (compile): 17:18:57.320877 => 17:18:57.325651
+[0m17:18:57.328518 [debug] [Thread-3 (]: Writing injected SQL for node "model.invx1.logistics_dbt"
+[0m17:18:57.330709 [debug] [Thread-4 (]: Writing injected SQL for node "model.invx1.procurement"
+[0m17:18:57.331135 [debug] [Thread-1 (]: Timing info for model.invx1.documentation_dbt (compile): 17:18:57.313501 => 17:18:57.330994
+[0m17:18:57.333776 [debug] [Thread-5 (]: Writing injected SQL for node "model.invx1.sales_dbt"
+[0m17:18:57.334309 [debug] [Thread-2 (]: Began executing node model.invx1.dtc_dbt
+[0m17:18:57.334991 [debug] [Thread-3 (]: Timing info for model.invx1.logistics_dbt (compile): 17:18:57.326127 => 17:18:57.334703
+[0m17:18:57.335687 [debug] [Thread-1 (]: Began executing node model.invx1.documentation_dbt
+[0m17:18:57.336213 [debug] [Thread-4 (]: Timing info for model.invx1.procurement (compile): 17:18:57.328928 => 17:18:57.336057
+[0m17:18:57.348443 [debug] [Thread-5 (]: Timing info for model.invx1.sales_dbt (compile): 17:18:57.331382 => 17:18:57.348110
+[0m17:18:57.356015 [debug] [Thread-2 (]: Writing runtime sql for node "model.invx1.dtc_dbt"
+[0m17:18:57.356623 [debug] [Thread-3 (]: Began executing node model.invx1.logistics_dbt
+[0m17:18:57.360515 [debug] [Thread-1 (]: Writing runtime sql for node "model.invx1.documentation_dbt"
+[0m17:18:57.361118 [debug] [Thread-4 (]: Began executing node model.invx1.procurement
+[0m17:18:57.361647 [debug] [Thread-5 (]: Began executing node model.invx1.sales_dbt
+[0m17:18:57.364992 [debug] [Thread-3 (]: Writing runtime sql for node "model.invx1.logistics_dbt"
+[0m17:18:57.366203 [debug] [Thread-2 (]: Using snowflake connection "model.invx1.dtc_dbt"
+[0m17:18:57.367898 [debug] [Thread-1 (]: Using snowflake connection "model.invx1.documentation_dbt"
+[0m17:18:57.370044 [debug] [Thread-4 (]: Writing runtime sql for node "model.invx1.procurement"
+[0m17:18:57.372606 [debug] [Thread-5 (]: Writing runtime sql for node "model.invx1.sales_dbt"
+[0m17:18:57.373322 [debug] [Thread-2 (]: On model.invx1.dtc_dbt: /* {"app": "dbt", "dbt_version": "1.6.3", "profile_name": "invx1", "target_name": "dev", "node_id": "model.invx1.dtc_dbt"} */
+create or replace transient table INVX_DATABASE.CLEANED_DATA.dtc_dbt
+         as
+        (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+-- WITH deduplicated_data AS (
+--  SELECT
+--  "REG.NO" AS REGISTRATION_NUMBER,
+--  "MAKE" AS BRAND,
+--  "MODEL" AS VARIANT,
+--  ROW_NUMBER() OVER (PARTITION BY REGISTRATION_NUMBER, BRAND, VARIANT) AS row_num
+--  FROM AIRBYTE_SCHEMA.CONFIRMATIONS
+--  -- You can include any additional transformations here
+-- )
+
+
+WITH source_data AS (
+  SELECT
+    "VEHICLE RC" AS Registration_number,
+    "MAKE" AS BRAND,
+    "MODEL" AS MODEL,
+    "KEY COUNT" AS VEHICLE_KEYS_AVAILABLE_COUNT,
+    "CHASIS NO" AS VEHICLE_CHASIS_NO,
+    "ENGINE NO" AS VEHICLE_ENGINE_NO,
+    "RETAIL / WHOLESALE" AS VEHICLE_TO_RETAIL_OR_WHOLESALE,
+    "RC AVAILABILITY AT SOURCE" AS RC_AVAILABILITY_AT_SOURCE,
+    "DTC Name" AS DTC_CENTER_NAME,
+    "DTC IN DATE(DD/MM/YY)" AS DTC_VEHICLE_ARRIVED_DATE,
+    "YEAR" AS VEHICLE_MANUFACTURED_YEAR,
+    "L2 DATE (DD/MM/YY)" AS L2_INSPECTION_DATE,
+    "ESTIMATION DATE" AS ESTIMATED_REFURB_DATE,
+    "APPROVAL DATE" AS ESTIMATION_APPROVAL_DATE,
+    "BAY ALLOCATION" AS BAY_ALLOCATION_DATE,
+    "PRODUCTION DATE" AS REFURB_COMPLETED_DATE,
+    "DTC OUT DATE" AS DTC_OUT_DATE,
+    "ESTIMATED SPARES COUNT" AS ESTIMATED_SPARES_COUNT,
+    "ESTIMATION AMOUNT" AS ESTIMATED_REFURB_COST,
+    "WORK END" AS WORK_END_DATE,
+    "TECHNICIAN NAME (END WORK)" AS TECHNICIAN_NAME,
+    "LUBRICATIONS :" AS LUBRICATIONS_COST,
+    "BATTERY :" AS BATTERY_COST,
+    "TIRE :" AS TIRE_COST,
+    "SPARES:" AS SPARES_COST,
+    "PAINT, TINKER, & OTHERS :" AS PAINT_TINKER_OTHERS_COST,
+    "OUTSIDE WORK :" AS OUTSIDE_WORK_COST,
+    "TOTAL RF COST:" AS TOTAL_REFURB_COST,
+    "STATUS" AS REFURBISHMENT_STATUS,
+    "REMARKS" AS REFURB_REMARKS
+  FROM RAW_DATA.CONFIRMATIONS
+
+)
+
+SELECT *
+FROM source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+        );
+[0m17:18:57.374517 [debug] [Thread-3 (]: Using snowflake connection "model.invx1.logistics_dbt"
+[0m17:18:57.375192 [debug] [Thread-1 (]: On model.invx1.documentation_dbt: /* {"app": "dbt", "dbt_version": "1.6.3", "profile_name": "invx1", "target_name": "dev", "node_id": "model.invx1.documentation_dbt"} */
+create or replace transient table INVX_DATABASE.CLEANED_DATA.documentation_dbt
+         as
+        (
+
+WITH source_data AS (
+ SELECT
+ "RC_NUMBER" AS REGISTRATION_NUMBER,
+ "STATUS" AS VEHICLE_CURRENT_STATUS,
+ "LOCATION" AS VEHICLE_PROCURED_STATE,
+ "VEHICLE DELIVERED ON" AS VEHICLE_DELIVERED_DATE,
+ "REGISTRATION_DATE" AS VEHICLE_REGISTRATION_DATE,
+ "OWNER_NAME" AS VEHICLE_CURRENT_OWNER_NAME,
+ "OWNER_NUMBER" AS VEHICLE_OWNERSHIP_NUMBER,
+ "VEHICLE_CHASI_NUMBER" AS VEHICLE_CHASIS_NUMBER,
+ "VEHICLE_ENGINE_NUMBER" AS VEHICLE_ENGINE_NUMBER,
+ "MAKER_DESCRIPTION" AS BRAND,
+   "MAKER_MODEL" AS MODEL,
+ "INSURANCE_UPTO" AS INSURANCE_EXPIRY_DATA,
+ "REGISTERED_AT" AS VEHICLE_REGISTERED_RTO,
+ "PAAS DOCS HANDOVER" AS DOCUMENTS_HANDOVER_TO_PAAS,
+ "FRC / DRC REQUIRED" AS RC_CURRENT_STATUS,
+ "APPLIED DATE" AS PRESALE_RC_APPLIED_DATE,
+ "VENDOR SUBMITTED" PRESALE_RC_APPLICATION_SUMBITTED_TO,
+ "RECEIVED DATE" AS PRESALE_RC_RECEIVED_DATE,
+ "COST" AS RC_APPLICATION_COST,
+ "BUYER DOCS STATUS" AS POST_BUYER_KYC,
+ "RECEIVED DATE1" AS BUYER_KYC_RECEIVED_DATE,
+ "SOLD SOURCE" AS SOLD_VEHICLE_SOURCE,
+ "FINANCIER NAME" AS SOLD_VEHICLE_FINANCIER_NAME,
+ "FORM 34 STATUS" AS FORM_34_STATUS,
+ "APPLIED FOR PURPOSE" AS POSTSALE_APPLICATION_PURPOSE,
+ "APPLIED DATE1" AS POSTSALE_DOCS_APPLIED_DATE,
+ "SUBMITTED TO" AS POSTSALE_DOCS_SUBMITTED_TO,
+ "RECEIVED DATE2" AS POSTSALE_DOCS_RECEIVED_DATE,
+ "COST SPENT" AS POSTSALE_DOCUMENTATION_COST
+ FROM RAW_DATA.DOCUMENTATION
+
+)
+
+SELECT *
+FROM source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+        );
+[0m17:18:57.376544 [debug] [Thread-5 (]: Using snowflake connection "model.invx1.sales_dbt"
+[0m17:18:57.377843 [debug] [Thread-4 (]: Using snowflake connection "model.invx1.procurement"
+[0m17:18:57.378341 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m17:18:57.378924 [debug] [Thread-3 (]: On model.invx1.logistics_dbt: /* {"app": "dbt", "dbt_version": "1.6.3", "profile_name": "invx1", "target_name": "dev", "node_id": "model.invx1.logistics_dbt"} */
+create or replace transient table INVX_DATABASE.CLEANED_DATA.logistics_dbt
+         as
+        (-- configuring data type to table
+
+
+
+with source_data as (
+SELECT
+    "DELIVERY DATE" AS VEH_DELIVERY_DATA_DTC,
+    "ETA" AS EXPECTED_TIME_ARRIVAL,
+    "MONTH/YEAR" AS VEHICLE_PROCURED_MONTH,
+    "CONSIGNMENT" AS CONSIGNMENT,
+    "PLATFORM" AS PLATFORM_VEH_MOVING_TO,
+    "MOVEMENT TYPE" AS VEH_MOVEMENT_TYEP,
+    "PICK-UP LOCATION" AS VEHICLE_PICKUP_LOCATION,
+    "DROP LOCATION" AS VEHICLE_DROP_LOCATION,
+    "REG #" AS REGISTRATION_NUMBER,
+    -- "MODEL" AS MODEL,
+    -- "CHASSIS NUMBER" AS VEHICLE_CHASIS_NUMBER,
+    -- "ENGINE NUMBER" AS VEHICLE_ENGINE_NUMBER,
+    "KEY AVAILABILITY" AS VEH_KEY_AVAILABITY,
+    "PARKING CHARGES" AS PARKING_CHARGES,
+    "TRUCK COST/PETROL COST" AS VEHICLE_MOVEMENT_COST,
+    "LABOUR COST" AS LABOUR_COST,
+    "OVERALL COST FOR TRANSPORTATION" AS TOTAL_TRANSPORTATION_COST,
+    "PER VEHICLE COST" AS TRANSPORTATION_COST_PER_VEHICLE,
+    "TASK MASTER" AS VEHICLE_TASK_MASTER,
+    "CURRENT STATUS" AS VEHICLE_REFURBISHMENT_STATUS,
+    "LOCATION" AS VEHICLE_REGISTERED_STATE,
+    "SORTING DECISION" AS VEHICLE_TO_RETAIL_OR_WHOLESALE
+
+    FROM RAW_DATA.LOGISTICS
+)
+
+-- storing data to desination
+SELECT * FROM source_data
+        );
+[0m17:18:57.379476 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:18:57.380096 [debug] [Thread-5 (]: On model.invx1.sales_dbt: /* {"app": "dbt", "dbt_version": "1.6.3", "profile_name": "invx1", "target_name": "dev", "node_id": "model.invx1.sales_dbt"} */
+create or replace transient table INVX_DATABASE.CLEANED_DATA.sales_dbt
+         as
+        (
+
+with source_data as (
+    SELECT 
+    "STATE" AS VEHICLE_REGISTERED_STATE,
+    "RTO" AS VEHICLE_RTO_CITY,
+    "TOTAL VEHICLE MASTER" AS REGISTRATION_NUMBER,
+    "JOURNEY COMPLETE?" AS VEHICLE_JOURNEY_STATUS,
+    "VEHICLE" AS MODEL,
+    "QC PASSED" AS QC_PASSED_DATE,
+    "DELIVERY DATE" AS VEH_DELIVERY_DATA,
+    "FLOOR STOCK" AS FLOOR_STOCK_VEHICLE,
+    "RECEIVED LOCATION" AS VEHICLE_RECEIVED_LOCATION,
+    "RC STATUS" AS RC_CURRENT_STATUS,
+    "RETAIL SELECTION" AS RETAIL_NAME,
+    "FOFO FREEZING" AS fOFO_FREEZING,
+    "COCO FREEZING" AS COCO_FREEZING,
+    "PAAS FREEZING" AS PAAS_FREEZING,
+    "VEHICLE AVAILABLE?" AS VEHICLE_AVILABLILITY_FOR_SALE,
+    "REFURB(Y/N)" AS VEHICLE_REFURB_STATUS,
+    "PROCUREMENT SOURCE" AS PROCUREMENT_SOURCE,
+    "REQUEST DATE" AS VEHICLE_FREEZING_REQUEST_DATE,
+    "TENTATIVE SALES" AS VEHICLE_TENTATIVE_SALE,
+    "RC LOCATION" AS RC_LOCATION,
+    "MANF YR" AS VEHICLE_MANUFACTURED_YEAR,
+    "OWNER" AS VEHICLE_OWNERSHIP_NUMBER,
+    "DECISION" AS VEHICLE_RETAIL_DECISION,
+    "YARD LOCATION" AS VEHICLE_YARD_LOCATION,
+    "PROCUREMENT" AS VEHICLE_PROCURED_DATE,
+    "LEAD TIME FOR RC" AS LEAD_TIME_FOR_RC,
+    "AGEING" AS AGE_FROM_PROCUREMENT_TILLDATE
+
+    FROM RAW_DATA."VEH MAPING LIST"
+)
+
+SELECT * FROM source_data
+        );
+[0m17:18:57.380553 [debug] [Thread-4 (]: On model.invx1.procurement: /* {"app": "dbt", "dbt_version": "1.6.3", "profile_name": "invx1", "target_name": "dev", "node_id": "model.invx1.procurement"} */
+create or replace transient table INVX_DATABASE.CLEANED_DATA.procurement
+         as
+        (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+WITH source_data AS (
+  SELECT
+    "REG.NO" AS Registration_number,
+    "MAKE" AS BRAND,
+    "MODEL" AS MODEL,
+    "MONTH" AS VEHICLE_PROCURED_MONTH,
+    "LAN NO" AS LOAN_ACCOUNT_NUMBER,
+    "STATE" AS VEHICLE_PROCURED_STATE,
+    "CITY" AS VEHICLE_PROCURED_CITY,
+    "FINANCER" AS FINANCIER,
+    "PLATFORM" AS VEHICLE_PROCURED_PLATFORM,
+    "CATEGORY" AS VEHICLE_CATEGORY,
+    "YEAR" AS VEHICLE_MANUFACTURED_YEAR,
+    "RC AVAILABILITY" AS RC_AVAILABILITY_STATUS,
+    "COST" AS PROCURED_COST,
+    "A/C NO." AS PROCUREMENT_PAYMENT_ACCOUNT,
+    "IFSC" AS PROCUREMENT_PAYMENT_IFSC,
+    "A/C NAME" AS PROCUREMENT_PAYMENT_ACCOUNT_NAME,
+    "PARTICULARS" AS PROCUREMENT_PAYMENT_PARTICULARS,
+    "CONFIRMATION DATE" AS CUSTOMER_CONFIRMED_DATE,
+    "PAYMENT DATE" AS PROCUREMENT_PAYMENT_DATE,
+    "OWNERSHIP DATE" AS PROCUREMENT_OWNERSHIP_DATE,
+    "PAYMENT STATUS" AS PROCUREMENT_PAYMENT_STATUS,
+    "VEHICLE RECEIVED" AS PROCUREMENT_VEHICLE_RECEIVED_STATUS,
+    "REVEIVED DATE" AS PROCUREMENT_VEHICLE_RECEIVED_DATE,
+    "RC RECEIVED" AS PRESALE_RC_RECEIVED_STATUS,
+    "RC RECEIVED DATE" AS PRESALE_RC_RECEIVED_DATE,
+    "NOC RECEIVED" AS PRESALE_NOC_RECEIVED_STATUS,
+    "NOC RECEIVED DATE" AS PRESALE_NOC_RECEIVED_DATE,
+    "CONFIRMATION LINK" AS PROCUREMENT_CONFIRMATION_LINK,
+    "REMAKRS" AS PROCURED_REMARKS,
+    "PICK UP" AS PROCUREMENT_PICKUP_LOCATION,
+    "DROP" AS PROCUREMENT_DROP_LOCATION,
+    "REFUND DATE" AS PROCUREMENT_REFUND_DATE,
+    "UTR DETAILS" AS PROCUREMENT_UTR_DETAILS,
+    "MODE OF PAYMENT" AS PROCUREMENT_REFUND_PAYMENT_MODE,
+    "CHALLAN" AS PROCUREMENT_CHALLAN_AMOUNT,
+    "PAAS" AS PROCUREMENT_PAAS_STATUS,
+    "RTO CODE" AS VEHICLE_RTO_CODE,
+    "RTO ZONE" AS VEHICLE_RTO_ZONE,
+    "RTO CITY" AS VEHICLE_RTO_CITY,
+    "RETAIL DECISION" AS VEHICLE_RETAIL_DECISION
+  FROM RAW_DATA.CONFIRMATIONS
+
+)
+
+SELECT *
+FROM source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+        );
+[0m17:18:57.382655 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m17:18:57.384064 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m17:18:57.384579 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m17:18:57.738228 [debug] [Thread-2 (]: Snowflake adapter: Snowflake query id: 01af8824-0000-7714-0005-cb46000130ca
+[0m17:18:57.739257 [debug] [Thread-2 (]: Snowflake adapter: Snowflake error: 000904 (42000): SQL compilation error: error line 25 at position 4
+invalid identifier '"VEHICLE RC"'
+[0m17:18:57.739860 [debug] [Thread-2 (]: Timing info for model.invx1.dtc_dbt (execute): 17:18:57.336621 => 17:18:57.739741
+[0m17:18:57.740132 [debug] [Thread-2 (]: On model.invx1.dtc_dbt: Close
+[0m17:18:57.839400 [debug] [Thread-2 (]: Database Error in model dtc_dbt (models/example/dtc_dbt.sql)
+  000904 (42000): SQL compilation error: error line 25 at position 4
+  invalid identifier '"VEHICLE RC"'
+  compiled Code at target/run/invx1/models/example/dtc_dbt.sql
+[0m17:18:57.840685 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8bff4f19-cec1-4d5a-bcce-f0011fe1b54b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fead14796f0>]}
+[0m17:18:57.841921 [error] [Thread-2 (]: 2 of 5 ERROR creating sql table model CLEANED_DATA.dtc_dbt ..................... [[31mERROR[0m in 0.53s]
+[0m17:18:57.842936 [debug] [Thread-2 (]: Finished running node model.invx1.dtc_dbt
+[0m17:18:58.834676 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m17:18:58.852569 [debug] [Thread-4 (]: Timing info for model.invx1.procurement (execute): 17:18:57.368285 => 17:18:58.852435
+[0m17:18:58.852888 [debug] [Thread-4 (]: On model.invx1.procurement: Close
+[0m17:18:58.884144 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 2.0 seconds
+[0m17:18:58.888776 [debug] [Thread-3 (]: Timing info for model.invx1.logistics_dbt (execute): 17:18:57.362209 => 17:18:58.888558
+[0m17:18:58.889228 [debug] [Thread-3 (]: On model.invx1.logistics_dbt: Close
+[0m17:18:58.949632 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8bff4f19-cec1-4d5a-bcce-f0011fe1b54b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feacfb14940>]}
+[0m17:18:58.951208 [info ] [Thread-4 (]: 4 of 5 OK created sql table model CLEANED_DATA.procurement ..................... [[32mSUCCESS 1[0m in 1.64s]
+[0m17:18:58.952585 [debug] [Thread-4 (]: Finished running node model.invx1.procurement
+[0m17:18:58.962981 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 2.0 seconds
+[0m17:18:58.967998 [debug] [Thread-1 (]: Timing info for model.invx1.documentation_dbt (execute): 17:18:57.357132 => 17:18:58.967845
+[0m17:18:58.968313 [debug] [Thread-1 (]: On model.invx1.documentation_dbt: Close
+[0m17:18:58.987229 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8bff4f19-cec1-4d5a-bcce-f0011fe1b54b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feacd647d30>]}
+[0m17:18:58.988386 [info ] [Thread-3 (]: 3 of 5 OK created sql table model CLEANED_DATA.logistics_dbt ................... [[32mSUCCESS 1[0m in 1.67s]
+[0m17:18:58.989151 [debug] [Thread-3 (]: Finished running node model.invx1.logistics_dbt
+[0m17:18:59.060174 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 2.0 seconds
+[0m17:18:59.063813 [debug] [Thread-5 (]: Timing info for model.invx1.sales_dbt (execute): 17:18:57.370523 => 17:18:59.063615
+[0m17:18:59.064240 [debug] [Thread-5 (]: On model.invx1.sales_dbt: Close
+[0m17:18:59.067414 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8bff4f19-cec1-4d5a-bcce-f0011fe1b54b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fead1483d30>]}
+[0m17:18:59.068420 [info ] [Thread-1 (]: 1 of 5 OK created sql table model CLEANED_DATA.documentation_dbt ............... [[32mSUCCESS 1[0m in 1.76s]
+[0m17:18:59.069413 [debug] [Thread-1 (]: Finished running node model.invx1.documentation_dbt
+[0m17:18:59.168771 [debug] [Thread-5 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '8bff4f19-cec1-4d5a-bcce-f0011fe1b54b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feacfb15720>]}
+[0m17:18:59.170511 [info ] [Thread-5 (]: 5 of 5 OK created sql table model CLEANED_DATA.sales_dbt ....................... [[32mSUCCESS 1[0m in 1.85s]
+[0m17:18:59.171889 [debug] [Thread-5 (]: Finished running node model.invx1.sales_dbt
+[0m17:18:59.175866 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:18:59.176551 [debug] [MainThread]: Connection 'model.invx1.documentation_dbt' was properly closed.
+[0m17:18:59.177049 [debug] [MainThread]: Connection 'model.invx1.dtc_dbt' was properly closed.
+[0m17:18:59.177451 [debug] [MainThread]: Connection 'model.invx1.logistics_dbt' was properly closed.
+[0m17:18:59.177837 [debug] [MainThread]: Connection 'model.invx1.procurement' was properly closed.
+[0m17:18:59.178173 [debug] [MainThread]: Connection 'model.invx1.sales_dbt' was properly closed.
+[0m17:18:59.178563 [info ] [MainThread]: 
+[0m17:18:59.178977 [info ] [MainThread]: Finished running 5 table models in 0 hours 0 minutes and 3.10 seconds (3.10s).
+[0m17:18:59.180031 [debug] [MainThread]: Command end result
+[0m17:18:59.185420 [info ] [MainThread]: 
+[0m17:18:59.185873 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m17:18:59.186129 [info ] [MainThread]: 
+[0m17:18:59.186346 [error] [MainThread]:   Database Error in model dtc_dbt (models/example/dtc_dbt.sql)
+  000904 (42000): SQL compilation error: error line 25 at position 4
+  invalid identifier '"VEHICLE RC"'
+  compiled Code at target/run/invx1/models/example/dtc_dbt.sql
+[0m17:18:59.186585 [info ] [MainThread]: 
+[0m17:18:59.186811 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=1 SKIP=0 TOTAL=5
+[0m17:18:59.187224 [debug] [MainThread]: Command `dbt run` failed at 17:18:59.187144 after 3.33 seconds
+[0m17:18:59.187528 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fead6c8acb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feacfb07d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feacfb47b80>]}
+[0m17:18:59.187812 [debug] [MainThread]: Flushing usage events
+[0m17:21:00.617013 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8c4e1b6ce0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8c4c7ffb20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8c4c7ffa90>]}
+
+
+============================== 17:21:00.639747 | db4ecba8-fd6f-480d-a4cc-17fe5feef8a8 ==============================
+[0m17:21:00.639747 [info ] [MainThread]: Running with dbt=1.6.3
+[0m17:21:00.640245 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/lap10/Desktop/InvX', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/home/lap10/Desktop/InvX/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m17:21:00.754426 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'db4ecba8-fd6f-480d-a4cc-17fe5feef8a8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8c4d365c00>]}
+[0m17:21:00.759610 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'db4ecba8-fd6f-480d-a4cc-17fe5feef8a8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8c4b6d1b40>]}
+[0m17:21:00.760057 [info ] [MainThread]: Registered adapter: snowflake=1.6.3
+[0m17:21:00.764819 [debug] [MainThread]: checksum: 800ab10c53db38b54e69cd328777f0c48b6374b8a89466e8ff54aa9acb452b75, vars: {}, profile: , target: , version: 1.6.3
+[0m17:21:00.776380 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:21:00.776732 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:21:00.780205 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'db4ecba8-fd6f-480d-a4cc-17fe5feef8a8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8c471225c0>]}
+[0m17:21:00.786071 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'db4ecba8-fd6f-480d-a4cc-17fe5feef8a8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8c489e5d50>]}
+[0m17:21:00.786547 [info ] [MainThread]: Found 5 models, 0 sources, 0 exposures, 0 metrics, 372 macros, 0 groups, 0 semantic models
+[0m17:21:00.786840 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'db4ecba8-fd6f-480d-a4cc-17fe5feef8a8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8c489e5d80>]}
+[0m17:21:00.788138 [info ] [MainThread]: 
+[0m17:21:00.788625 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m17:21:00.789566 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_INVX_DATABASE'
+[0m17:21:00.797725 [debug] [ThreadPool]: Using snowflake connection "list_INVX_DATABASE"
+[0m17:21:00.798043 [debug] [ThreadPool]: On list_INVX_DATABASE: /* {"app": "dbt", "dbt_version": "1.6.3", "profile_name": "invx1", "target_name": "dev", "connection_name": "list_INVX_DATABASE"} */
+show terse schemas in database INVX_DATABASE
+    limit 10000
+[0m17:21:00.798249 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:21:01.450006 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1.0 seconds
+[0m17:21:01.452995 [debug] [ThreadPool]: On list_INVX_DATABASE: Close
+[0m17:21:01.557783 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_INVX_DATABASE, now list_INVX_DATABASE_CLEANED_DATA)
+[0m17:21:01.569633 [debug] [ThreadPool]: Using snowflake connection "list_INVX_DATABASE_CLEANED_DATA"
+[0m17:21:01.569945 [debug] [ThreadPool]: On list_INVX_DATABASE_CLEANED_DATA: /* {"app": "dbt", "dbt_version": "1.6.3", "profile_name": "invx1", "target_name": "dev", "connection_name": "list_INVX_DATABASE_CLEANED_DATA"} */
+show terse objects in INVX_DATABASE.CLEANED_DATA limit 10000
+[0m17:21:01.570168 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:21:02.191277 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1.0 seconds
+[0m17:21:02.194735 [debug] [ThreadPool]: On list_INVX_DATABASE_CLEANED_DATA: Close
+[0m17:21:02.303420 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'db4ecba8-fd6f-480d-a4cc-17fe5feef8a8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8c47107b50>]}
+[0m17:21:02.305167 [info ] [MainThread]: Concurrency: 10 threads (target='dev')
+[0m17:21:02.306062 [info ] [MainThread]: 
+[0m17:21:02.314516 [debug] [Thread-1 (]: Began running node model.invx1.documentation_dbt
+[0m17:21:02.315345 [debug] [Thread-2 (]: Began running node model.invx1.dtc_dbt
+[0m17:21:02.315929 [debug] [Thread-3 (]: Began running node model.invx1.logistics_dbt
+[0m17:21:02.316618 [info ] [Thread-1 (]: 1 of 5 START sql table model CLEANED_DATA.documentation_dbt .................... [RUN]
+[0m17:21:02.317589 [debug] [Thread-4 (]: Began running node model.invx1.procurement
+[0m17:21:02.318304 [info ] [Thread-2 (]: 2 of 5 START sql table model CLEANED_DATA.dtc_dbt .............................. [RUN]
+[0m17:21:02.318651 [debug] [Thread-5 (]: Began running node model.invx1.sales_dbt
+[0m17:21:02.319216 [info ] [Thread-3 (]: 3 of 5 START sql table model CLEANED_DATA.logistics_dbt ........................ [RUN]
+[0m17:21:02.320407 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_INVX_DATABASE_CLEANED_DATA, now model.invx1.documentation_dbt)
+[0m17:21:02.321280 [info ] [Thread-4 (]: 4 of 5 START sql table model CLEANED_DATA.procurement .......................... [RUN]
+[0m17:21:02.322142 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.invx1.dtc_dbt'
+[0m17:21:02.322731 [info ] [Thread-5 (]: 5 of 5 START sql table model CLEANED_DATA.sales_dbt ............................ [RUN]
+[0m17:21:02.323992 [debug] [Thread-3 (]: Acquiring new snowflake connection 'model.invx1.logistics_dbt'
+[0m17:21:02.324610 [debug] [Thread-1 (]: Began compiling node model.invx1.documentation_dbt
+[0m17:21:02.325659 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.invx1.procurement'
+[0m17:21:02.326162 [debug] [Thread-2 (]: Began compiling node model.invx1.dtc_dbt
+[0m17:21:02.326864 [debug] [Thread-5 (]: Acquiring new snowflake connection 'model.invx1.sales_dbt'
+[0m17:21:02.327332 [debug] [Thread-3 (]: Began compiling node model.invx1.logistics_dbt
+[0m17:21:02.332579 [debug] [Thread-1 (]: Writing injected SQL for node "model.invx1.documentation_dbt"
+[0m17:21:02.333148 [debug] [Thread-4 (]: Began compiling node model.invx1.procurement
+[0m17:21:02.336024 [debug] [Thread-2 (]: Writing injected SQL for node "model.invx1.dtc_dbt"
+[0m17:21:02.336694 [debug] [Thread-5 (]: Began compiling node model.invx1.sales_dbt
+[0m17:21:02.338967 [debug] [Thread-3 (]: Writing injected SQL for node "model.invx1.logistics_dbt"
+[0m17:21:02.340961 [debug] [Thread-4 (]: Writing injected SQL for node "model.invx1.procurement"
+[0m17:21:02.341651 [debug] [Thread-1 (]: Timing info for model.invx1.documentation_dbt (compile): 17:21:02.327603 => 17:21:02.341355
+[0m17:21:02.344980 [debug] [Thread-5 (]: Writing injected SQL for node "model.invx1.sales_dbt"
+[0m17:21:02.346206 [debug] [Thread-2 (]: Timing info for model.invx1.dtc_dbt (compile): 17:21:02.333614 => 17:21:02.345772
+[0m17:21:02.346967 [debug] [Thread-3 (]: Timing info for model.invx1.logistics_dbt (compile): 17:21:02.337142 => 17:21:02.346763
+[0m17:21:02.347467 [debug] [Thread-1 (]: Began executing node model.invx1.documentation_dbt
+[0m17:21:02.348067 [debug] [Thread-4 (]: Timing info for model.invx1.procurement (compile): 17:21:02.339425 => 17:21:02.347827
+[0m17:21:02.348795 [debug] [Thread-2 (]: Began executing node model.invx1.dtc_dbt
+[0m17:21:02.349274 [debug] [Thread-5 (]: Timing info for model.invx1.sales_dbt (compile): 17:21:02.342162 => 17:21:02.349033
+[0m17:21:02.349807 [debug] [Thread-3 (]: Began executing node model.invx1.logistics_dbt
+[0m17:21:02.361192 [debug] [Thread-4 (]: Began executing node model.invx1.procurement
+[0m17:21:02.371238 [debug] [Thread-1 (]: Writing runtime sql for node "model.invx1.documentation_dbt"
+[0m17:21:02.374271 [debug] [Thread-2 (]: Writing runtime sql for node "model.invx1.dtc_dbt"
+[0m17:21:02.374955 [debug] [Thread-5 (]: Began executing node model.invx1.sales_dbt
+[0m17:21:02.377156 [debug] [Thread-3 (]: Writing runtime sql for node "model.invx1.logistics_dbt"
+[0m17:21:02.380158 [debug] [Thread-4 (]: Writing runtime sql for node "model.invx1.procurement"
+[0m17:21:02.382178 [debug] [Thread-1 (]: Using snowflake connection "model.invx1.documentation_dbt"
+[0m17:21:02.384873 [debug] [Thread-5 (]: Writing runtime sql for node "model.invx1.sales_dbt"
+[0m17:21:02.386441 [debug] [Thread-2 (]: Using snowflake connection "model.invx1.dtc_dbt"
+[0m17:21:02.387546 [debug] [Thread-3 (]: Using snowflake connection "model.invx1.logistics_dbt"
+[0m17:21:02.388230 [debug] [Thread-1 (]: On model.invx1.documentation_dbt: /* {"app": "dbt", "dbt_version": "1.6.3", "profile_name": "invx1", "target_name": "dev", "node_id": "model.invx1.documentation_dbt"} */
+create or replace transient table INVX_DATABASE.CLEANED_DATA.documentation_dbt
+         as
+        (
+
+WITH source_data AS (
+ SELECT
+ "RC_NUMBER" AS REGISTRATION_NUMBER,
+ "STATUS" AS VEHICLE_CURRENT_STATUS,
+ "LOCATION" AS VEHICLE_PROCURED_STATE,
+ "VEHICLE DELIVERED ON" AS VEHICLE_DELIVERED_DATE,
+ "REGISTRATION_DATE" AS VEHICLE_REGISTRATION_DATE,
+ "OWNER_NAME" AS VEHICLE_CURRENT_OWNER_NAME,
+ "OWNER_NUMBER" AS VEHICLE_OWNERSHIP_NUMBER,
+ "VEHICLE_CHASI_NUMBER" AS VEHICLE_CHASIS_NUMBER,
+ "VEHICLE_ENGINE_NUMBER" AS VEHICLE_ENGINE_NUMBER,
+ "MAKER_DESCRIPTION" AS BRAND,
+   "MAKER_MODEL" AS MODEL,
+ "INSURANCE_UPTO" AS INSURANCE_EXPIRY_DATA,
+ "REGISTERED_AT" AS VEHICLE_REGISTERED_RTO,
+ "PAAS DOCS HANDOVER" AS DOCUMENTS_HANDOVER_TO_PAAS,
+ "FRC / DRC REQUIRED" AS RC_CURRENT_STATUS,
+ "APPLIED DATE" AS PRESALE_RC_APPLIED_DATE,
+ "VENDOR SUBMITTED" PRESALE_RC_APPLICATION_SUMBITTED_TO,
+ "RECEIVED DATE" AS PRESALE_RC_RECEIVED_DATE,
+ "COST" AS RC_APPLICATION_COST,
+ "BUYER DOCS STATUS" AS POST_BUYER_KYC,
+ "RECEIVED DATE1" AS BUYER_KYC_RECEIVED_DATE,
+ "SOLD SOURCE" AS SOLD_VEHICLE_SOURCE,
+ "FINANCIER NAME" AS SOLD_VEHICLE_FINANCIER_NAME,
+ "FORM 34 STATUS" AS FORM_34_STATUS,
+ "APPLIED FOR PURPOSE" AS POSTSALE_APPLICATION_PURPOSE,
+ "APPLIED DATE1" AS POSTSALE_DOCS_APPLIED_DATE,
+ "SUBMITTED TO" AS POSTSALE_DOCS_SUBMITTED_TO,
+ "RECEIVED DATE2" AS POSTSALE_DOCS_RECEIVED_DATE,
+ "COST SPENT" AS POSTSALE_DOCUMENTATION_COST
+ FROM RAW_DATA.DOCUMENTATION
+
+)
+
+SELECT *
+FROM source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+        );
+[0m17:21:02.390084 [debug] [Thread-4 (]: Using snowflake connection "model.invx1.procurement"
+[0m17:21:02.391234 [debug] [Thread-5 (]: Using snowflake connection "model.invx1.sales_dbt"
+[0m17:21:02.391801 [debug] [Thread-2 (]: On model.invx1.dtc_dbt: /* {"app": "dbt", "dbt_version": "1.6.3", "profile_name": "invx1", "target_name": "dev", "node_id": "model.invx1.dtc_dbt"} */
+create or replace transient table INVX_DATABASE.CLEANED_DATA.dtc_dbt
+         as
+        (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+-- WITH deduplicated_data AS (
+--  SELECT
+--  "REG.NO" AS REGISTRATION_NUMBER,
+--  "MAKE" AS BRAND,
+--  "MODEL" AS VARIANT,
+--  ROW_NUMBER() OVER (PARTITION BY REGISTRATION_NUMBER, BRAND, VARIANT) AS row_num
+--  FROM AIRBYTE_SCHEMA.CONFIRMATIONS
+--  -- You can include any additional transformations here
+-- )
+
+
+WITH source_data AS (
+  SELECT
+    "VEHICLE RC" AS Registration_number,
+    "MAKE" AS BRAND,
+    "MODEL" AS MODEL,
+    "KEY COUNT" AS VEHICLE_KEYS_AVAILABLE_COUNT,
+    "CHASIS NO" AS VEHICLE_CHASIS_NO,
+    "ENGINE NO" AS VEHICLE_ENGINE_NO,
+    "RETAIL / WHOLESALE" AS VEHICLE_TO_RETAIL_OR_WHOLESALE,
+    "RC AVAILABILITY AT SOURCE" AS RC_AVAILABILITY_AT_SOURCE,
+    "DTC Name" AS DTC_CENTER_NAME,
+    "DTC IN DATE(DD/MM/YY)" AS DTC_VEHICLE_ARRIVED_DATE,
+    "YEAR" AS VEHICLE_MANUFACTURED_YEAR,
+    "L2 DATE (DD/MM/YY)" AS L2_INSPECTION_DATE,
+    "ESTIMATION DATE" AS ESTIMATED_REFURB_DATE,
+    "APPROVAL DATE" AS ESTIMATION_APPROVAL_DATE,
+    "BAY ALLOCATION" AS BAY_ALLOCATION_DATE,
+    "PRODUCTION DATE" AS REFURB_COMPLETED_DATE,
+    "DTC OUT DATE" AS DTC_OUT_DATE,
+    "ESTIMATED SPARES COUNT" AS ESTIMATED_SPARES_COUNT,
+    "ESTIMATION AMOUNT" AS ESTIMATED_REFURB_COST,
+    "WORK END" AS WORK_END_DATE,
+    "TECHNICIAN NAME (END WORK)" AS TECHNICIAN_NAME,
+    "LUBRICATIONS :" AS LUBRICATIONS_COST,
+    "BATTERY :" AS BATTERY_COST,
+    "TIRE :" AS TIRE_COST,
+    "SPARES:" AS SPARES_COST,
+    "PAINT, TINKER, & OTHERS :" AS PAINT_TINKER_OTHERS_COST,
+    "OUTSIDE WORK :" AS OUTSIDE_WORK_COST,
+    "TOTAL RF COST:" AS TOTAL_REFURB_COST,
+    "STATUS" AS REFURBISHMENT_STATUS,
+    "REMARKS" AS REFURB_REMARKS
+  FROM RAW_DATA.CONFIRMATIONS
+
+)
+
+SELECT *
+FROM source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+        );
+[0m17:21:02.392523 [debug] [Thread-3 (]: On model.invx1.logistics_dbt: /* {"app": "dbt", "dbt_version": "1.6.3", "profile_name": "invx1", "target_name": "dev", "node_id": "model.invx1.logistics_dbt"} */
+create or replace transient table INVX_DATABASE.CLEANED_DATA.logistics_dbt
+         as
+        (-- configuring data type to table
+
+
+
+with source_data as (
+SELECT
+    "DELIVERY DATE" AS VEH_DELIVERY_DATA_DTC,
+    "ETA" AS EXPECTED_TIME_ARRIVAL,
+    "MONTH/YEAR" AS VEHICLE_PROCURED_MONTH,
+    "CONSIGNMENT" AS CONSIGNMENT,
+    "PLATFORM" AS PLATFORM_VEH_MOVING_TO,
+    "MOVEMENT TYPE" AS VEH_MOVEMENT_TYEP,
+    "PICK-UP LOCATION" AS VEHICLE_PICKUP_LOCATION,
+    "DROP LOCATION" AS VEHICLE_DROP_LOCATION,
+    "REG #" AS REGISTRATION_NUMBER,
+    -- "MODEL" AS MODEL,
+    -- "CHASSIS NUMBER" AS VEHICLE_CHASIS_NUMBER,
+    -- "ENGINE NUMBER" AS VEHICLE_ENGINE_NUMBER,
+    "KEY AVAILABILITY" AS VEH_KEY_AVAILABITY,
+    "PARKING CHARGES" AS PARKING_CHARGES,
+    "TRUCK COST/PETROL COST" AS VEHICLE_MOVEMENT_COST,
+    "LABOUR COST" AS LABOUR_COST,
+    "OVERALL COST FOR TRANSPORTATION" AS TOTAL_TRANSPORTATION_COST,
+    "PER VEHICLE COST" AS TRANSPORTATION_COST_PER_VEHICLE,
+    "TASK MASTER" AS VEHICLE_TASK_MASTER,
+    "CURRENT STATUS" AS VEHICLE_REFURBISHMENT_STATUS,
+    "LOCATION" AS VEHICLE_REGISTERED_STATE,
+    "SORTING DECISION" AS VEHICLE_TO_RETAIL_OR_WHOLESALE
+
+    FROM RAW_DATA.LOGISTICS
+)
+
+-- storing data to desination
+SELECT * FROM source_data
+        );
+[0m17:21:02.392996 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:21:02.393609 [debug] [Thread-4 (]: On model.invx1.procurement: /* {"app": "dbt", "dbt_version": "1.6.3", "profile_name": "invx1", "target_name": "dev", "node_id": "model.invx1.procurement"} */
+create or replace transient table INVX_DATABASE.CLEANED_DATA.procurement
+         as
+        (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+WITH source_data AS (
+  SELECT
+    "REG.NO" AS Registration_number,
+    "MAKE" AS BRAND,
+    "MODEL" AS MODEL,
+    "MONTH" AS VEHICLE_PROCURED_MONTH,
+    "LAN NO" AS LOAN_ACCOUNT_NUMBER,
+    "STATE" AS VEHICLE_PROCURED_STATE,
+    "CITY" AS VEHICLE_PROCURED_CITY,
+    "FINANCER" AS FINANCIER,
+    "PLATFORM" AS VEHICLE_PROCURED_PLATFORM,
+    "CATEGORY" AS VEHICLE_CATEGORY,
+    "YEAR" AS VEHICLE_MANUFACTURED_YEAR,
+    "RC AVAILABILITY" AS RC_AVAILABILITY_STATUS,
+    "COST" AS PROCURED_COST,
+    "A/C NO." AS PROCUREMENT_PAYMENT_ACCOUNT,
+    "IFSC" AS PROCUREMENT_PAYMENT_IFSC,
+    "A/C NAME" AS PROCUREMENT_PAYMENT_ACCOUNT_NAME,
+    "PARTICULARS" AS PROCUREMENT_PAYMENT_PARTICULARS,
+    "CONFIRMATION DATE" AS CUSTOMER_CONFIRMED_DATE,
+    "PAYMENT DATE" AS PROCUREMENT_PAYMENT_DATE,
+    "OWNERSHIP DATE" AS PROCUREMENT_OWNERSHIP_DATE,
+    "PAYMENT STATUS" AS PROCUREMENT_PAYMENT_STATUS,
+    "VEHICLE RECEIVED" AS PROCUREMENT_VEHICLE_RECEIVED_STATUS,
+    "REVEIVED DATE" AS PROCUREMENT_VEHICLE_RECEIVED_DATE,
+    "RC RECEIVED" AS PRESALE_RC_RECEIVED_STATUS,
+    "RC RECEIVED DATE" AS PRESALE_RC_RECEIVED_DATE,
+    "NOC RECEIVED" AS PRESALE_NOC_RECEIVED_STATUS,
+    "NOC RECEIVED DATE" AS PRESALE_NOC_RECEIVED_DATE,
+    "CONFIRMATION LINK" AS PROCUREMENT_CONFIRMATION_LINK,
+    "REMAKRS" AS PROCURED_REMARKS,
+    "PICK UP" AS PROCUREMENT_PICKUP_LOCATION,
+    "DROP" AS PROCUREMENT_DROP_LOCATION,
+    "REFUND DATE" AS PROCUREMENT_REFUND_DATE,
+    "UTR DETAILS" AS PROCUREMENT_UTR_DETAILS,
+    "MODE OF PAYMENT" AS PROCUREMENT_REFUND_PAYMENT_MODE,
+    "CHALLAN" AS PROCUREMENT_CHALLAN_AMOUNT,
+    "PAAS" AS PROCUREMENT_PAAS_STATUS,
+    "RTO CODE" AS VEHICLE_RTO_CODE,
+    "RTO ZONE" AS VEHICLE_RTO_ZONE,
+    "RTO CITY" AS VEHICLE_RTO_CITY,
+    "RETAIL DECISION" AS VEHICLE_RETAIL_DECISION
+  FROM RAW_DATA.CONFIRMATIONS
+
+)
+
+SELECT *
+FROM source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+        );
+[0m17:21:02.394314 [debug] [Thread-5 (]: On model.invx1.sales_dbt: /* {"app": "dbt", "dbt_version": "1.6.3", "profile_name": "invx1", "target_name": "dev", "node_id": "model.invx1.sales_dbt"} */
+create or replace transient table INVX_DATABASE.CLEANED_DATA.sales_dbt
+         as
+        (
+
+with source_data as (
+    SELECT 
+    "STATE" AS VEHICLE_REGISTERED_STATE,
+    "RTO" AS VEHICLE_RTO_CITY,
+    "TOTAL VEHICLE MASTER" AS REGISTRATION_NUMBER,
+    "JOURNEY COMPLETE?" AS VEHICLE_JOURNEY_STATUS,
+    "VEHICLE" AS MODEL,
+    "QC PASSED" AS QC_PASSED_DATE,
+    "DELIVERY DATE" AS VEH_DELIVERY_DATA,
+    "FLOOR STOCK" AS FLOOR_STOCK_VEHICLE,
+    "RECEIVED LOCATION" AS VEHICLE_RECEIVED_LOCATION,
+    "RC STATUS" AS RC_CURRENT_STATUS,
+    "RETAIL SELECTION" AS RETAIL_NAME,
+    "FOFO FREEZING" AS fOFO_FREEZING,
+    "COCO FREEZING" AS COCO_FREEZING,
+    "PAAS FREEZING" AS PAAS_FREEZING,
+    "VEHICLE AVAILABLE?" AS VEHICLE_AVILABLILITY_FOR_SALE,
+    "REFURB(Y/N)" AS VEHICLE_REFURB_STATUS,
+    "PROCUREMENT SOURCE" AS PROCUREMENT_SOURCE,
+    "REQUEST DATE" AS VEHICLE_FREEZING_REQUEST_DATE,
+    "TENTATIVE SALES" AS VEHICLE_TENTATIVE_SALE,
+    "RC LOCATION" AS RC_LOCATION,
+    "MANF YR" AS VEHICLE_MANUFACTURED_YEAR,
+    "OWNER" AS VEHICLE_OWNERSHIP_NUMBER,
+    "DECISION" AS VEHICLE_RETAIL_DECISION,
+    "YARD LOCATION" AS VEHICLE_YARD_LOCATION,
+    "PROCUREMENT" AS VEHICLE_PROCURED_DATE,
+    "LEAD TIME FOR RC" AS LEAD_TIME_FOR_RC,
+    "AGEING" AS AGE_FROM_PROCUREMENT_TILLDATE
+
+    FROM RAW_DATA."VEH MAPING LIST"
+)
+
+SELECT * FROM source_data
+        );
+[0m17:21:02.394820 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m17:21:02.395417 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m17:21:02.396519 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m17:21:02.397981 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m17:21:02.790993 [debug] [Thread-2 (]: Snowflake adapter: Snowflake query id: 01af8827-0000-7714-0005-cb4600013102
+[0m17:21:02.791972 [debug] [Thread-2 (]: Snowflake adapter: Snowflake error: 000904 (42000): SQL compilation error: error line 25 at position 4
+invalid identifier '"VEHICLE RC"'
+[0m17:21:02.792330 [debug] [Thread-2 (]: Timing info for model.invx1.dtc_dbt (execute): 17:21:02.371619 => 17:21:02.792206
+[0m17:21:02.792596 [debug] [Thread-2 (]: On model.invx1.dtc_dbt: Close
+[0m17:21:02.892273 [debug] [Thread-2 (]: Database Error in model dtc_dbt (models/example/dtc_dbt.sql)
+  000904 (42000): SQL compilation error: error line 25 at position 4
+  invalid identifier '"VEHICLE RC"'
+  compiled Code at target/run/invx1/models/example/dtc_dbt.sql
+[0m17:21:02.892702 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'db4ecba8-fd6f-480d-a4cc-17fe5feef8a8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8c46694670>]}
+[0m17:21:02.893126 [error] [Thread-2 (]: 2 of 5 ERROR creating sql table model CLEANED_DATA.dtc_dbt ..................... [[31mERROR[0m in 0.57s]
+[0m17:21:02.893530 [debug] [Thread-2 (]: Finished running node model.invx1.dtc_dbt
+[0m17:21:03.746047 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m17:21:03.761642 [debug] [Thread-3 (]: Timing info for model.invx1.logistics_dbt (execute): 17:21:02.375493 => 17:21:03.761497
+[0m17:21:03.761950 [debug] [Thread-3 (]: On model.invx1.logistics_dbt: Close
+[0m17:21:03.858050 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'db4ecba8-fd6f-480d-a4cc-17fe5feef8a8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8c465a5ab0>]}
+[0m17:21:03.859232 [info ] [Thread-3 (]: 3 of 5 OK created sql table model CLEANED_DATA.logistics_dbt ................... [[32mSUCCESS 1[0m in 1.53s]
+[0m17:21:03.859638 [debug] [Thread-3 (]: Finished running node model.invx1.logistics_dbt
+[0m17:21:03.880318 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m17:21:03.884660 [debug] [Thread-4 (]: Timing info for model.invx1.procurement (execute): 17:21:02.377584 => 17:21:03.884383
+[0m17:21:03.886141 [debug] [Thread-4 (]: On model.invx1.procurement: Close
+[0m17:21:03.888212 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m17:21:03.892998 [debug] [Thread-5 (]: Timing info for model.invx1.sales_dbt (execute): 17:21:02.382553 => 17:21:03.892801
+[0m17:21:03.893427 [debug] [Thread-5 (]: On model.invx1.sales_dbt: Close
+[0m17:21:03.996322 [debug] [Thread-5 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'db4ecba8-fd6f-480d-a4cc-17fe5feef8a8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8c44420ac0>]}
+[0m17:21:03.998001 [info ] [Thread-5 (]: 5 of 5 OK created sql table model CLEANED_DATA.sales_dbt ....................... [[32mSUCCESS 1[0m in 1.67s]
+[0m17:21:03.999222 [debug] [Thread-5 (]: Finished running node model.invx1.sales_dbt
+[0m17:21:04.001175 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'db4ecba8-fd6f-480d-a4cc-17fe5feef8a8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8c44402c80>]}
+[0m17:21:04.002295 [info ] [Thread-4 (]: 4 of 5 OK created sql table model CLEANED_DATA.procurement ..................... [[32mSUCCESS 1[0m in 1.68s]
+[0m17:21:04.003586 [debug] [Thread-4 (]: Finished running node model.invx1.procurement
+[0m17:21:04.087010 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 2.0 seconds
+[0m17:21:04.092892 [debug] [Thread-1 (]: Timing info for model.invx1.documentation_dbt (execute): 17:21:02.350138 => 17:21:04.092620
+[0m17:21:04.093447 [debug] [Thread-1 (]: On model.invx1.documentation_dbt: Close
+[0m17:21:04.198374 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'db4ecba8-fd6f-480d-a4cc-17fe5feef8a8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8c465a5360>]}
+[0m17:21:04.200136 [info ] [Thread-1 (]: 1 of 5 OK created sql table model CLEANED_DATA.documentation_dbt ............... [[32mSUCCESS 1[0m in 1.88s]
+[0m17:21:04.201474 [debug] [Thread-1 (]: Finished running node model.invx1.documentation_dbt
+[0m17:21:04.205165 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:21:04.206023 [debug] [MainThread]: Connection 'model.invx1.documentation_dbt' was properly closed.
+[0m17:21:04.206777 [debug] [MainThread]: Connection 'model.invx1.dtc_dbt' was properly closed.
+[0m17:21:04.207690 [debug] [MainThread]: Connection 'model.invx1.logistics_dbt' was properly closed.
+[0m17:21:04.208448 [debug] [MainThread]: Connection 'model.invx1.procurement' was properly closed.
+[0m17:21:04.209015 [debug] [MainThread]: Connection 'model.invx1.sales_dbt' was properly closed.
+[0m17:21:04.209665 [info ] [MainThread]: 
+[0m17:21:04.210278 [info ] [MainThread]: Finished running 5 table models in 0 hours 0 minutes and 3.42 seconds (3.42s).
+[0m17:21:04.211891 [debug] [MainThread]: Command end result
+[0m17:21:04.218199 [info ] [MainThread]: 
+[0m17:21:04.218731 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m17:21:04.218984 [info ] [MainThread]: 
+[0m17:21:04.219224 [error] [MainThread]:   Database Error in model dtc_dbt (models/example/dtc_dbt.sql)
+  000904 (42000): SQL compilation error: error line 25 at position 4
+  invalid identifier '"VEHICLE RC"'
+  compiled Code at target/run/invx1/models/example/dtc_dbt.sql
+[0m17:21:04.219473 [info ] [MainThread]: 
+[0m17:21:04.219724 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=1 SKIP=0 TOTAL=5
+[0m17:21:04.220174 [debug] [MainThread]: Command `dbt run` failed at 17:21:04.220080 after 3.61 seconds
+[0m17:21:04.220493 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8c4e1b6ce0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8c465c72e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8c46573e80>]}
+[0m17:21:04.220784 [debug] [MainThread]: Flushing usage events
+[0m17:22:36.078864 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffa327b2d70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffa30cffbe0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffa30cffb80>]}
+
+
+============================== 17:22:36.101744 | bdcde0df-1988-480b-b36d-8bbe3ef08cfa ==============================
+[0m17:22:36.101744 [info ] [MainThread]: Running with dbt=1.6.3
+[0m17:22:36.102218 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/lap10/Desktop/InvX', 'version_check': 'True', 'debug': 'False', 'log_path': '/home/lap10/Desktop/InvX/logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m17:22:36.216290 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'bdcde0df-1988-480b-b36d-8bbe3ef08cfa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffa31881c90>]}
+[0m17:22:36.221438 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'bdcde0df-1988-480b-b36d-8bbe3ef08cfa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffa2cfd0760>]}
+[0m17:22:36.221881 [info ] [MainThread]: Registered adapter: snowflake=1.6.3
+[0m17:22:36.226868 [debug] [MainThread]: checksum: 800ab10c53db38b54e69cd328777f0c48b6374b8a89466e8ff54aa9acb452b75, vars: {}, profile: , target: , version: 1.6.3
+[0m17:22:36.238685 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:22:36.239010 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:22:36.242735 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'bdcde0df-1988-480b-b36d-8bbe3ef08cfa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffa2b626650>]}
+[0m17:22:36.248871 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'bdcde0df-1988-480b-b36d-8bbe3ef08cfa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffa2b755de0>]}
+[0m17:22:36.249287 [info ] [MainThread]: Found 5 models, 0 sources, 0 exposures, 0 metrics, 372 macros, 0 groups, 0 semantic models
+[0m17:22:36.249590 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bdcde0df-1988-480b-b36d-8bbe3ef08cfa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffa2b755e10>]}
+[0m17:22:36.250792 [info ] [MainThread]: 
+[0m17:22:36.251289 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m17:22:36.252219 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_INVX_DATABASE'
+[0m17:22:36.260527 [debug] [ThreadPool]: Using snowflake connection "list_INVX_DATABASE"
+[0m17:22:36.260866 [debug] [ThreadPool]: On list_INVX_DATABASE: /* {"app": "dbt", "dbt_version": "1.6.3", "profile_name": "invx1", "target_name": "dev", "connection_name": "list_INVX_DATABASE"} */
+show terse schemas in database INVX_DATABASE
+    limit 10000
+[0m17:22:36.261082 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:22:36.886704 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1.0 seconds
+[0m17:22:36.889612 [debug] [ThreadPool]: On list_INVX_DATABASE: Close
+[0m17:22:36.991824 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_INVX_DATABASE, now list_INVX_DATABASE_CLEANED_DATA)
+[0m17:22:37.002279 [debug] [ThreadPool]: Using snowflake connection "list_INVX_DATABASE_CLEANED_DATA"
+[0m17:22:37.002580 [debug] [ThreadPool]: On list_INVX_DATABASE_CLEANED_DATA: /* {"app": "dbt", "dbt_version": "1.6.3", "profile_name": "invx1", "target_name": "dev", "connection_name": "list_INVX_DATABASE_CLEANED_DATA"} */
+show terse objects in INVX_DATABASE.CLEANED_DATA limit 10000
+[0m17:22:37.002785 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:22:37.708507 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1.0 seconds
+[0m17:22:37.711884 [debug] [ThreadPool]: On list_INVX_DATABASE_CLEANED_DATA: Close
+[0m17:22:37.813182 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bdcde0df-1988-480b-b36d-8bbe3ef08cfa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffa2b60bbe0>]}
+[0m17:22:37.814743 [info ] [MainThread]: Concurrency: 10 threads (target='dev')
+[0m17:22:37.815523 [info ] [MainThread]: 
+[0m17:22:37.821647 [debug] [Thread-1 (]: Began running node model.invx1.documentation_dbt
+[0m17:22:37.822990 [debug] [Thread-2 (]: Began running node model.invx1.dtc_dbt
+[0m17:22:37.824372 [info ] [Thread-1 (]: 1 of 5 START sql table model CLEANED_DATA.documentation_dbt .................... [RUN]
+[0m17:22:37.825774 [debug] [Thread-3 (]: Began running node model.invx1.logistics_dbt
+[0m17:22:37.826922 [debug] [Thread-4 (]: Began running node model.invx1.procurement
+[0m17:22:37.828171 [info ] [Thread-2 (]: 2 of 5 START sql table model CLEANED_DATA.dtc_dbt .............................. [RUN]
+[0m17:22:37.829569 [debug] [Thread-5 (]: Began running node model.invx1.sales_dbt
+[0m17:22:37.831216 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_INVX_DATABASE_CLEANED_DATA, now model.invx1.documentation_dbt)
+[0m17:22:37.832701 [info ] [Thread-3 (]: 3 of 5 START sql table model CLEANED_DATA.logistics_dbt ........................ [RUN]
+[0m17:22:37.833475 [info ] [Thread-4 (]: 4 of 5 START sql table model CLEANED_DATA.procurement .......................... [RUN]
+[0m17:22:37.834599 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.invx1.dtc_dbt'
+[0m17:22:37.835683 [info ] [Thread-5 (]: 5 of 5 START sql table model CLEANED_DATA.sales_dbt ............................ [RUN]
+[0m17:22:37.836419 [debug] [Thread-1 (]: Began compiling node model.invx1.documentation_dbt
+[0m17:22:37.837467 [debug] [Thread-3 (]: Acquiring new snowflake connection 'model.invx1.logistics_dbt'
+[0m17:22:37.838151 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.invx1.procurement'
+[0m17:22:37.838586 [debug] [Thread-2 (]: Began compiling node model.invx1.dtc_dbt
+[0m17:22:37.839688 [debug] [Thread-5 (]: Acquiring new snowflake connection 'model.invx1.sales_dbt'
+[0m17:22:37.850134 [debug] [Thread-1 (]: Writing injected SQL for node "model.invx1.documentation_dbt"
+[0m17:22:37.850650 [debug] [Thread-3 (]: Began compiling node model.invx1.logistics_dbt
+[0m17:22:37.850993 [debug] [Thread-4 (]: Began compiling node model.invx1.procurement
+[0m17:22:37.853177 [debug] [Thread-2 (]: Writing injected SQL for node "model.invx1.dtc_dbt"
+[0m17:22:37.853824 [debug] [Thread-5 (]: Began compiling node model.invx1.sales_dbt
+[0m17:22:37.855938 [debug] [Thread-3 (]: Writing injected SQL for node "model.invx1.logistics_dbt"
+[0m17:22:37.857672 [debug] [Thread-4 (]: Writing injected SQL for node "model.invx1.procurement"
+[0m17:22:37.858482 [debug] [Thread-1 (]: Timing info for model.invx1.documentation_dbt (compile): 17:22:37.840273 => 17:22:37.858289
+[0m17:22:37.861264 [debug] [Thread-5 (]: Writing injected SQL for node "model.invx1.sales_dbt"
+[0m17:22:37.861978 [debug] [Thread-2 (]: Timing info for model.invx1.dtc_dbt (compile): 17:22:37.851233 => 17:22:37.861694
+[0m17:22:37.862973 [debug] [Thread-3 (]: Timing info for model.invx1.logistics_dbt (compile): 17:22:37.854371 => 17:22:37.862752
+[0m17:22:37.863313 [debug] [Thread-4 (]: Timing info for model.invx1.procurement (compile): 17:22:37.856188 => 17:22:37.863182
+[0m17:22:37.863612 [debug] [Thread-1 (]: Began executing node model.invx1.documentation_dbt
+[0m17:22:37.864204 [debug] [Thread-2 (]: Began executing node model.invx1.dtc_dbt
+[0m17:22:37.864824 [debug] [Thread-5 (]: Timing info for model.invx1.sales_dbt (compile): 17:22:37.858845 => 17:22:37.864575
+[0m17:22:37.865302 [debug] [Thread-3 (]: Began executing node model.invx1.logistics_dbt
+[0m17:22:37.865572 [debug] [Thread-4 (]: Began executing node model.invx1.procurement
+[0m17:22:37.894399 [debug] [Thread-2 (]: Writing runtime sql for node "model.invx1.dtc_dbt"
+[0m17:22:37.894993 [debug] [Thread-5 (]: Began executing node model.invx1.sales_dbt
+[0m17:22:37.897605 [debug] [Thread-1 (]: Writing runtime sql for node "model.invx1.documentation_dbt"
+[0m17:22:37.899825 [debug] [Thread-3 (]: Writing runtime sql for node "model.invx1.logistics_dbt"
+[0m17:22:37.901643 [debug] [Thread-4 (]: Writing runtime sql for node "model.invx1.procurement"
+[0m17:22:37.902834 [debug] [Thread-2 (]: Using snowflake connection "model.invx1.dtc_dbt"
+[0m17:22:37.905743 [debug] [Thread-5 (]: Writing runtime sql for node "model.invx1.sales_dbt"
+[0m17:22:37.907051 [debug] [Thread-1 (]: Using snowflake connection "model.invx1.documentation_dbt"
+[0m17:22:37.907666 [debug] [Thread-2 (]: On model.invx1.dtc_dbt: /* {"app": "dbt", "dbt_version": "1.6.3", "profile_name": "invx1", "target_name": "dev", "node_id": "model.invx1.dtc_dbt"} */
+create or replace transient table INVX_DATABASE.CLEANED_DATA.dtc_dbt
+         as
+        (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+-- WITH deduplicated_data AS (
+--  SELECT
+--  "REG.NO" AS REGISTRATION_NUMBER,
+--  "MAKE" AS BRAND,
+--  "MODEL" AS VARIANT,
+--  ROW_NUMBER() OVER (PARTITION BY REGISTRATION_NUMBER, BRAND, VARIANT) AS row_num
+--  FROM AIRBYTE_SCHEMA.CONFIRMATIONS
+--  -- You can include any additional transformations here
+-- )
+
+
+WITH source_data AS (
+  SELECT
+    "VEHICLE RC" AS Registration_number,
+    "MAKE" AS BRAND,
+    "MODEL" AS MODEL,
+    "KEY COUNT" AS VEHICLE_KEYS_AVAILABLE_COUNT,
+    "CHASIS NO" AS VEHICLE_CHASIS_NO,
+    "ENGINE NO" AS VEHICLE_ENGINE_NO,
+    "RETAIL / WHOLESALE" AS VEHICLE_TO_RETAIL_OR_WHOLESALE,
+    "RC AVAILABILITY AT SOURCE" AS RC_AVAILABILITY_AT_SOURCE,
+    "DTC Name" AS DTC_CENTER_NAME,
+    "DTC IN DATE(DD/MM/YY)" AS DTC_VEHICLE_ARRIVED_DATE,
+    "YEAR" AS VEHICLE_MANUFACTURED_YEAR,
+    "L2 DATE (DD/MM/YY)" AS L2_INSPECTION_DATE,
+    "ESTIMATION DATE" AS ESTIMATED_REFURB_DATE,
+    "APPROVAL DATE" AS ESTIMATION_APPROVAL_DATE,
+    "BAY ALLOCATION" AS BAY_ALLOCATION_DATE,
+    "PRODUCTION DATE" AS REFURB_COMPLETED_DATE,
+    "DTC OUT DATE" AS DTC_OUT_DATE,
+    "ESTIMATED SPARES COUNT" AS ESTIMATED_SPARES_COUNT,
+    "ESTIMATION AMOUNT" AS ESTIMATED_REFURB_COST,
+    "WORK END" AS WORK_END_DATE,
+    "TECHNICIAN NAME (END WORK)" AS TECHNICIAN_NAME,
+    "LUBRICATIONS :" AS LUBRICATIONS_COST,
+    "BATTERY :" AS BATTERY_COST,
+    "TIRE :" AS TIRE_COST,
+    "SPARES:" AS SPARES_COST,
+    "PAINT, TINKER, & OTHERS :" AS PAINT_TINKER_OTHERS_COST,
+    "OUTSIDE WORK :" AS OUTSIDE_WORK_COST,
+    "TOTAL RF COST:" AS TOTAL_REFURB_COST,
+    "STATUS" AS REFURBISHMENT_STATUS,
+    "REMARKS" AS REFURB_REMARKS
+  FROM RAW_DATA.CONFIRMATIONS
+
+)
+
+SELECT *
+FROM source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+        );
+[0m17:22:37.908781 [debug] [Thread-3 (]: Using snowflake connection "model.invx1.logistics_dbt"
+[0m17:22:37.909918 [debug] [Thread-4 (]: Using snowflake connection "model.invx1.procurement"
+[0m17:22:37.910594 [debug] [Thread-1 (]: On model.invx1.documentation_dbt: /* {"app": "dbt", "dbt_version": "1.6.3", "profile_name": "invx1", "target_name": "dev", "node_id": "model.invx1.documentation_dbt"} */
+create or replace transient table INVX_DATABASE.CLEANED_DATA.documentation_dbt
+         as
+        (
+
+WITH source_data AS (
+ SELECT
+ "RC_NUMBER" AS REGISTRATION_NUMBER,
+ "STATUS" AS VEHICLE_CURRENT_STATUS,
+ "LOCATION" AS VEHICLE_PROCURED_STATE,
+ "VEHICLE DELIVERED ON" AS VEHICLE_DELIVERED_DATE,
+ "REGISTRATION_DATE" AS VEHICLE_REGISTRATION_DATE,
+ "OWNER_NAME" AS VEHICLE_CURRENT_OWNER_NAME,
+ "OWNER_NUMBER" AS VEHICLE_OWNERSHIP_NUMBER,
+ "VEHICLE_CHASI_NUMBER" AS VEHICLE_CHASIS_NUMBER,
+ "VEHICLE_ENGINE_NUMBER" AS VEHICLE_ENGINE_NUMBER,
+ "MAKER_DESCRIPTION" AS BRAND,
+   "MAKER_MODEL" AS MODEL,
+ "INSURANCE_UPTO" AS INSURANCE_EXPIRY_DATA,
+ "REGISTERED_AT" AS VEHICLE_REGISTERED_RTO,
+ "PAAS DOCS HANDOVER" AS DOCUMENTS_HANDOVER_TO_PAAS,
+ "FRC / DRC REQUIRED" AS RC_CURRENT_STATUS,
+ "APPLIED DATE" AS PRESALE_RC_APPLIED_DATE,
+ "VENDOR SUBMITTED" PRESALE_RC_APPLICATION_SUMBITTED_TO,
+ "RECEIVED DATE" AS PRESALE_RC_RECEIVED_DATE,
+ "COST" AS RC_APPLICATION_COST,
+ "BUYER DOCS STATUS" AS POST_BUYER_KYC,
+ "RECEIVED DATE1" AS BUYER_KYC_RECEIVED_DATE,
+ "SOLD SOURCE" AS SOLD_VEHICLE_SOURCE,
+ "FINANCIER NAME" AS SOLD_VEHICLE_FINANCIER_NAME,
+ "FORM 34 STATUS" AS FORM_34_STATUS,
+ "APPLIED FOR PURPOSE" AS POSTSALE_APPLICATION_PURPOSE,
+ "APPLIED DATE1" AS POSTSALE_DOCS_APPLIED_DATE,
+ "SUBMITTED TO" AS POSTSALE_DOCS_SUBMITTED_TO,
+ "RECEIVED DATE2" AS POSTSALE_DOCS_RECEIVED_DATE,
+ "COST SPENT" AS POSTSALE_DOCUMENTATION_COST
+ FROM RAW_DATA.DOCUMENTATION
+
+)
+
+SELECT *
+FROM source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+        );
+[0m17:22:37.910986 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m17:22:37.912248 [debug] [Thread-5 (]: Using snowflake connection "model.invx1.sales_dbt"
+[0m17:22:37.912843 [debug] [Thread-3 (]: On model.invx1.logistics_dbt: /* {"app": "dbt", "dbt_version": "1.6.3", "profile_name": "invx1", "target_name": "dev", "node_id": "model.invx1.logistics_dbt"} */
+create or replace transient table INVX_DATABASE.CLEANED_DATA.logistics_dbt
+         as
+        (-- configuring data type to table
+
+
+
+with source_data as (
+SELECT
+    "DELIVERY DATE" AS VEH_DELIVERY_DATA_DTC,
+    "ETA" AS EXPECTED_TIME_ARRIVAL,
+    "MONTH/YEAR" AS VEHICLE_PROCURED_MONTH,
+    "CONSIGNMENT" AS CONSIGNMENT,
+    "PLATFORM" AS PLATFORM_VEH_MOVING_TO,
+    "MOVEMENT TYPE" AS VEH_MOVEMENT_TYEP,
+    "PICK-UP LOCATION" AS VEHICLE_PICKUP_LOCATION,
+    "DROP LOCATION" AS VEHICLE_DROP_LOCATION,
+    "REG #" AS REGISTRATION_NUMBER,
+    -- "MODEL" AS MODEL,
+    -- "CHASSIS NUMBER" AS VEHICLE_CHASIS_NUMBER,
+    -- "ENGINE NUMBER" AS VEHICLE_ENGINE_NUMBER,
+    "KEY AVAILABILITY" AS VEH_KEY_AVAILABITY,
+    "PARKING CHARGES" AS PARKING_CHARGES,
+    "TRUCK COST/PETROL COST" AS VEHICLE_MOVEMENT_COST,
+    "LABOUR COST" AS LABOUR_COST,
+    "OVERALL COST FOR TRANSPORTATION" AS TOTAL_TRANSPORTATION_COST,
+    "PER VEHICLE COST" AS TRANSPORTATION_COST_PER_VEHICLE,
+    "TASK MASTER" AS VEHICLE_TASK_MASTER,
+    "CURRENT STATUS" AS VEHICLE_REFURBISHMENT_STATUS,
+    "LOCATION" AS VEHICLE_REGISTERED_STATE,
+    "SORTING DECISION" AS VEHICLE_TO_RETAIL_OR_WHOLESALE
+
+    FROM RAW_DATA.LOGISTICS
+)
+
+-- storing data to desination
+SELECT * FROM source_data
+        );
+[0m17:22:37.913270 [debug] [Thread-4 (]: On model.invx1.procurement: /* {"app": "dbt", "dbt_version": "1.6.3", "profile_name": "invx1", "target_name": "dev", "node_id": "model.invx1.procurement"} */
+create or replace transient table INVX_DATABASE.CLEANED_DATA.procurement
+         as
+        (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+WITH source_data AS (
+  SELECT
+    "REG.NO" AS Registration_number,
+    "MAKE" AS BRAND,
+    "MODEL" AS MODEL,
+    "MONTH" AS VEHICLE_PROCURED_MONTH,
+    "LAN NO" AS LOAN_ACCOUNT_NUMBER,
+    "STATE" AS VEHICLE_PROCURED_STATE,
+    "CITY" AS VEHICLE_PROCURED_CITY,
+    "FINANCER" AS FINANCIER,
+    "PLATFORM" AS VEHICLE_PROCURED_PLATFORM,
+    "CATEGORY" AS VEHICLE_CATEGORY,
+    "YEAR" AS VEHICLE_MANUFACTURED_YEAR,
+    "RC AVAILABILITY" AS RC_AVAILABILITY_STATUS,
+    "COST" AS PROCURED_COST,
+    "A/C NO." AS PROCUREMENT_PAYMENT_ACCOUNT,
+    "IFSC" AS PROCUREMENT_PAYMENT_IFSC,
+    "A/C NAME" AS PROCUREMENT_PAYMENT_ACCOUNT_NAME,
+    "PARTICULARS" AS PROCUREMENT_PAYMENT_PARTICULARS,
+    "CONFIRMATION DATE" AS CUSTOMER_CONFIRMED_DATE,
+    "PAYMENT DATE" AS PROCUREMENT_PAYMENT_DATE,
+    "OWNERSHIP DATE" AS PROCUREMENT_OWNERSHIP_DATE,
+    "PAYMENT STATUS" AS PROCUREMENT_PAYMENT_STATUS,
+    "VEHICLE RECEIVED" AS PROCUREMENT_VEHICLE_RECEIVED_STATUS,
+    "REVEIVED DATE" AS PROCUREMENT_VEHICLE_RECEIVED_DATE,
+    "RC RECEIVED" AS PRESALE_RC_RECEIVED_STATUS,
+    "RC RECEIVED DATE" AS PRESALE_RC_RECEIVED_DATE,
+    "NOC RECEIVED" AS PRESALE_NOC_RECEIVED_STATUS,
+    "NOC RECEIVED DATE" AS PRESALE_NOC_RECEIVED_DATE,
+    "CONFIRMATION LINK" AS PROCUREMENT_CONFIRMATION_LINK,
+    "REMAKRS" AS PROCURED_REMARKS,
+    "PICK UP" AS PROCUREMENT_PICKUP_LOCATION,
+    "DROP" AS PROCUREMENT_DROP_LOCATION,
+    "REFUND DATE" AS PROCUREMENT_REFUND_DATE,
+    "UTR DETAILS" AS PROCUREMENT_UTR_DETAILS,
+    "MODE OF PAYMENT" AS PROCUREMENT_REFUND_PAYMENT_MODE,
+    "CHALLAN" AS PROCUREMENT_CHALLAN_AMOUNT,
+    "PAAS" AS PROCUREMENT_PAAS_STATUS,
+    "RTO CODE" AS VEHICLE_RTO_CODE,
+    "RTO ZONE" AS VEHICLE_RTO_ZONE,
+    "RTO CITY" AS VEHICLE_RTO_CITY,
+    "RETAIL DECISION" AS VEHICLE_RETAIL_DECISION
+  FROM RAW_DATA.CONFIRMATIONS
+
+)
+
+SELECT *
+FROM source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+        );
+[0m17:22:37.913764 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:22:37.915492 [debug] [Thread-5 (]: On model.invx1.sales_dbt: /* {"app": "dbt", "dbt_version": "1.6.3", "profile_name": "invx1", "target_name": "dev", "node_id": "model.invx1.sales_dbt"} */
+create or replace transient table INVX_DATABASE.CLEANED_DATA.sales_dbt
+         as
+        (
+
+with source_data as (
+    SELECT 
+    "STATE" AS VEHICLE_REGISTERED_STATE,
+    "RTO" AS VEHICLE_RTO_CITY,
+    "TOTAL VEHICLE MASTER" AS REGISTRATION_NUMBER,
+    "JOURNEY COMPLETE?" AS VEHICLE_JOURNEY_STATUS,
+    "VEHICLE" AS MODEL,
+    "QC PASSED" AS QC_PASSED_DATE,
+    "DELIVERY DATE" AS VEH_DELIVERY_DATA,
+    "FLOOR STOCK" AS FLOOR_STOCK_VEHICLE,
+    "RECEIVED LOCATION" AS VEHICLE_RECEIVED_LOCATION,
+    "RC STATUS" AS RC_CURRENT_STATUS,
+    "RETAIL SELECTION" AS RETAIL_NAME,
+    "FOFO FREEZING" AS fOFO_FREEZING,
+    "COCO FREEZING" AS COCO_FREEZING,
+    "PAAS FREEZING" AS PAAS_FREEZING,
+    "VEHICLE AVAILABLE?" AS VEHICLE_AVILABLILITY_FOR_SALE,
+    "REFURB(Y/N)" AS VEHICLE_REFURB_STATUS,
+    "PROCUREMENT SOURCE" AS PROCUREMENT_SOURCE,
+    "REQUEST DATE" AS VEHICLE_FREEZING_REQUEST_DATE,
+    "TENTATIVE SALES" AS VEHICLE_TENTATIVE_SALE,
+    "RC LOCATION" AS RC_LOCATION,
+    "MANF YR" AS VEHICLE_MANUFACTURED_YEAR,
+    "OWNER" AS VEHICLE_OWNERSHIP_NUMBER,
+    "DECISION" AS VEHICLE_RETAIL_DECISION,
+    "YARD LOCATION" AS VEHICLE_YARD_LOCATION,
+    "PROCUREMENT" AS VEHICLE_PROCURED_DATE,
+    "LEAD TIME FOR RC" AS LEAD_TIME_FOR_RC,
+    "AGEING" AS AGE_FROM_PROCUREMENT_TILLDATE
+
+    FROM RAW_DATA."VEH MAPING LIST"
+)
+
+SELECT * FROM source_data
+        );
+[0m17:22:37.916119 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m17:22:37.916419 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m17:22:37.918235 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m17:22:38.369328 [debug] [Thread-2 (]: Snowflake adapter: Snowflake query id: 01af8828-0000-77d4-0005-cb4600012102
+[0m17:22:38.369683 [debug] [Thread-2 (]: Snowflake adapter: Snowflake error: 000904 (42000): SQL compilation error: error line 25 at position 4
+invalid identifier '"VEHICLE RC"'
+[0m17:22:38.370052 [debug] [Thread-2 (]: Timing info for model.invx1.dtc_dbt (execute): 17:22:37.877488 => 17:22:38.369936
+[0m17:22:38.370310 [debug] [Thread-2 (]: On model.invx1.dtc_dbt: Close
+[0m17:22:38.466110 [debug] [Thread-2 (]: Database Error in model dtc_dbt (models/example/dtc_dbt.sql)
+  000904 (42000): SQL compilation error: error line 25 at position 4
+  invalid identifier '"VEHICLE RC"'
+  compiled Code at target/run/invx1/models/example/dtc_dbt.sql
+[0m17:22:38.467369 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bdcde0df-1988-480b-b36d-8bbe3ef08cfa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffa2abad8a0>]}
+[0m17:22:38.468597 [error] [Thread-2 (]: 2 of 5 ERROR creating sql table model CLEANED_DATA.dtc_dbt ..................... [[31mERROR[0m in 0.63s]
+[0m17:22:38.469657 [debug] [Thread-2 (]: Finished running node model.invx1.dtc_dbt
+[0m17:22:39.254528 [debug] [Thread-3 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m17:22:39.269250 [debug] [Thread-3 (]: Timing info for model.invx1.logistics_dbt (execute): 17:22:37.898053 => 17:22:39.269123
+[0m17:22:39.269569 [debug] [Thread-3 (]: On model.invx1.logistics_dbt: Close
+[0m17:22:39.369867 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bdcde0df-1988-480b-b36d-8bbe3ef08cfa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffa2ab68910>]}
+[0m17:22:39.370412 [info ] [Thread-3 (]: 3 of 5 OK created sql table model CLEANED_DATA.logistics_dbt ................... [[32mSUCCESS 1[0m in 1.53s]
+[0m17:22:39.370797 [debug] [Thread-3 (]: Finished running node model.invx1.logistics_dbt
+[0m17:22:39.476724 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 2.0 seconds
+[0m17:22:39.482257 [debug] [Thread-1 (]: Timing info for model.invx1.documentation_dbt (execute): 17:22:37.865766 => 17:22:39.482133
+[0m17:22:39.482557 [debug] [Thread-1 (]: On model.invx1.documentation_dbt: Close
+[0m17:22:39.494839 [debug] [Thread-4 (]: SQL status: SUCCESS 1 in 2.0 seconds
+[0m17:22:39.499317 [debug] [Thread-4 (]: Timing info for model.invx1.procurement (execute): 17:22:37.900052 => 17:22:39.499095
+[0m17:22:39.499850 [debug] [Thread-4 (]: On model.invx1.procurement: Close
+[0m17:22:39.585817 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bdcde0df-1988-480b-b36d-8bbe3ef08cfa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffa2aa76950>]}
+[0m17:22:39.587504 [info ] [Thread-1 (]: 1 of 5 OK created sql table model CLEANED_DATA.documentation_dbt ............... [[32mSUCCESS 1[0m in 1.76s]
+[0m17:22:39.588796 [debug] [Thread-1 (]: Finished running node model.invx1.documentation_dbt
+[0m17:22:39.595968 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bdcde0df-1988-480b-b36d-8bbe3ef08cfa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffa2cfeee30>]}
+[0m17:22:39.597445 [info ] [Thread-4 (]: 4 of 5 OK created sql table model CLEANED_DATA.procurement ..................... [[32mSUCCESS 1[0m in 1.76s]
+[0m17:22:39.598378 [debug] [Thread-4 (]: Finished running node model.invx1.procurement
+[0m17:22:39.613609 [debug] [Thread-5 (]: SQL status: SUCCESS 1 in 2.0 seconds
+[0m17:22:39.618517 [debug] [Thread-5 (]: Timing info for model.invx1.sales_dbt (execute): 17:22:37.903193 => 17:22:39.618267
+[0m17:22:39.619056 [debug] [Thread-5 (]: On model.invx1.sales_dbt: Close
+[0m17:22:39.720983 [debug] [Thread-5 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bdcde0df-1988-480b-b36d-8bbe3ef08cfa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffa2cfeee00>]}
+[0m17:22:39.721955 [info ] [Thread-5 (]: 5 of 5 OK created sql table model CLEANED_DATA.sales_dbt ....................... [[32mSUCCESS 1[0m in 1.88s]
+[0m17:22:39.722659 [debug] [Thread-5 (]: Finished running node model.invx1.sales_dbt
+[0m17:22:39.724958 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:22:39.725483 [debug] [MainThread]: Connection 'model.invx1.documentation_dbt' was properly closed.
+[0m17:22:39.725885 [debug] [MainThread]: Connection 'model.invx1.dtc_dbt' was properly closed.
+[0m17:22:39.726269 [debug] [MainThread]: Connection 'model.invx1.logistics_dbt' was properly closed.
+[0m17:22:39.726648 [debug] [MainThread]: Connection 'model.invx1.procurement' was properly closed.
+[0m17:22:39.727056 [debug] [MainThread]: Connection 'model.invx1.sales_dbt' was properly closed.
+[0m17:22:39.727560 [info ] [MainThread]: 
+[0m17:22:39.728091 [info ] [MainThread]: Finished running 5 table models in 0 hours 0 minutes and 3.48 seconds (3.48s).
+[0m17:22:39.729421 [debug] [MainThread]: Command end result
+[0m17:22:39.734599 [info ] [MainThread]: 
+[0m17:22:39.735085 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m17:22:39.735338 [info ] [MainThread]: 
+[0m17:22:39.735571 [error] [MainThread]:   Database Error in model dtc_dbt (models/example/dtc_dbt.sql)
+  000904 (42000): SQL compilation error: error line 25 at position 4
+  invalid identifier '"VEHICLE RC"'
+  compiled Code at target/run/invx1/models/example/dtc_dbt.sql
+[0m17:22:39.735770 [info ] [MainThread]: 
+[0m17:22:39.736020 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=1 SKIP=0 TOTAL=5
+[0m17:22:39.736441 [debug] [MainThread]: Command `dbt run` failed at 17:22:39.736361 after 3.66 seconds
+[0m17:22:39.736723 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffa327b2d70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffa2cfb1e10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ffa2aa8f580>]}
+[0m17:22:39.737012 [debug] [MainThread]: Flushing usage events
+[0m17:23:02.688209 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f903f086d10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f903d59fbb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f903d59fb50>]}
+
+
+============================== 17:23:02.710916 | a5a3eed9-da46-45fc-b4d8-4697cfb87f21 ==============================
+[0m17:23:02.710916 [info ] [MainThread]: Running with dbt=1.6.3
+[0m17:23:02.711312 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/lap10/Desktop/InvX', 'debug': 'False', 'version_check': 'True', 'log_path': '/home/lap10/Desktop/InvX/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run --models dtc_dbt', 'send_anonymous_usage_stats': 'True'}
+[0m17:23:02.825309 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a5a3eed9-da46-45fc-b4d8-4697cfb87f21', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f903e131c30>]}
+[0m17:23:02.830395 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a5a3eed9-da46-45fc-b4d8-4697cfb87f21', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f903c4e0c40>]}
+[0m17:23:02.830803 [info ] [MainThread]: Registered adapter: snowflake=1.6.3
+[0m17:23:02.835611 [debug] [MainThread]: checksum: 800ab10c53db38b54e69cd328777f0c48b6374b8a89466e8ff54aa9acb452b75, vars: {}, profile: , target: , version: 1.6.3
+[0m17:23:02.847270 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m17:23:02.847818 [debug] [MainThread]: Partial parsing: updated file: invx1://models/example/dtc_dbt.sql
+[0m17:23:02.871630 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a5a3eed9-da46-45fc-b4d8-4697cfb87f21', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f903671c0d0>]}
+[0m17:23:02.877552 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a5a3eed9-da46-45fc-b4d8-4697cfb87f21', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f903c3e9e40>]}
+[0m17:23:02.878047 [info ] [MainThread]: Found 5 models, 0 sources, 0 exposures, 0 metrics, 372 macros, 0 groups, 0 semantic models
+[0m17:23:02.878345 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a5a3eed9-da46-45fc-b4d8-4697cfb87f21', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f903c3e9de0>]}
+[0m17:23:02.879227 [info ] [MainThread]: 
+[0m17:23:02.879772 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m17:23:02.880620 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_INVX_DATABASE'
+[0m17:23:02.888736 [debug] [ThreadPool]: Using snowflake connection "list_INVX_DATABASE"
+[0m17:23:02.889000 [debug] [ThreadPool]: On list_INVX_DATABASE: /* {"app": "dbt", "dbt_version": "1.6.3", "profile_name": "invx1", "target_name": "dev", "connection_name": "list_INVX_DATABASE"} */
+show terse schemas in database INVX_DATABASE
+    limit 10000
+[0m17:23:02.889208 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:23:03.632383 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1.0 seconds
+[0m17:23:03.635511 [debug] [ThreadPool]: On list_INVX_DATABASE: Close
+[0m17:23:03.738919 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_INVX_DATABASE, now list_INVX_DATABASE_CLEANED_DATA)
+[0m17:23:03.748211 [debug] [ThreadPool]: Using snowflake connection "list_INVX_DATABASE_CLEANED_DATA"
+[0m17:23:03.748504 [debug] [ThreadPool]: On list_INVX_DATABASE_CLEANED_DATA: /* {"app": "dbt", "dbt_version": "1.6.3", "profile_name": "invx1", "target_name": "dev", "connection_name": "list_INVX_DATABASE_CLEANED_DATA"} */
+show terse objects in INVX_DATABASE.CLEANED_DATA limit 10000
+[0m17:23:03.748707 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:23:04.082529 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 0.0 seconds
+[0m17:23:04.085591 [debug] [ThreadPool]: On list_INVX_DATABASE_CLEANED_DATA: Close
+[0m17:23:04.185329 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a5a3eed9-da46-45fc-b4d8-4697cfb87f21', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9036754eb0>]}
+[0m17:23:04.186944 [info ] [MainThread]: Concurrency: 10 threads (target='dev')
+[0m17:23:04.187683 [info ] [MainThread]: 
+[0m17:23:04.191779 [debug] [Thread-1 (]: Began running node model.invx1.dtc_dbt
+[0m17:23:04.192442 [info ] [Thread-1 (]: 1 of 1 START sql table model CLEANED_DATA.dtc_dbt .............................. [RUN]
+[0m17:23:04.193118 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_INVX_DATABASE_CLEANED_DATA, now model.invx1.dtc_dbt)
+[0m17:23:04.193505 [debug] [Thread-1 (]: Began compiling node model.invx1.dtc_dbt
+[0m17:23:04.198891 [debug] [Thread-1 (]: Writing injected SQL for node "model.invx1.dtc_dbt"
+[0m17:23:04.199550 [debug] [Thread-1 (]: Timing info for model.invx1.dtc_dbt (compile): 17:23:04.193756 => 17:23:04.199365
+[0m17:23:04.199861 [debug] [Thread-1 (]: Began executing node model.invx1.dtc_dbt
+[0m17:23:04.218033 [debug] [Thread-1 (]: Writing runtime sql for node "model.invx1.dtc_dbt"
+[0m17:23:04.219385 [debug] [Thread-1 (]: Using snowflake connection "model.invx1.dtc_dbt"
+[0m17:23:04.219784 [debug] [Thread-1 (]: On model.invx1.dtc_dbt: /* {"app": "dbt", "dbt_version": "1.6.3", "profile_name": "invx1", "target_name": "dev", "node_id": "model.invx1.dtc_dbt"} */
+create or replace transient table INVX_DATABASE.CLEANED_DATA.dtc_dbt
+         as
+        (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+-- WITH deduplicated_data AS (
+--  SELECT
+--  "REG.NO" AS REGISTRATION_NUMBER,
+--  "MAKE" AS BRAND,
+--  "MODEL" AS VARIANT,
+--  ROW_NUMBER() OVER (PARTITION BY REGISTRATION_NUMBER, BRAND, VARIANT) AS row_num
+--  FROM AIRBYTE_SCHEMA.CONFIRMATIONS
+--  -- You can include any additional transformations here
+-- )
+
+
+WITH source_data AS (
+  SELECT
+    "VEHICLE RC " AS Registration_number,
+    "MAKE" AS BRAND,
+    "MODEL" AS MODEL,
+    "KEY COUNT" AS VEHICLE_KEYS_AVAILABLE_COUNT,
+    "CHASIS NO" AS VEHICLE_CHASIS_NO,
+    "ENGINE NO" AS VEHICLE_ENGINE_NO,
+    "RETAIL / WHOLESALE" AS VEHICLE_TO_RETAIL_OR_WHOLESALE,
+    "RC AVAILABILITY AT SOURCE" AS RC_AVAILABILITY_AT_SOURCE,
+    "DTC Name" AS DTC_CENTER_NAME,
+    "DTC IN DATE(DD/MM/YY)" AS DTC_VEHICLE_ARRIVED_DATE,
+    "YEAR" AS VEHICLE_MANUFACTURED_YEAR,
+    "L2 DATE (DD/MM/YY)" AS L2_INSPECTION_DATE,
+    "ESTIMATION DATE" AS ESTIMATED_REFURB_DATE,
+    "APPROVAL DATE" AS ESTIMATION_APPROVAL_DATE,
+    "BAY ALLOCATION" AS BAY_ALLOCATION_DATE,
+    "PRODUCTION DATE" AS REFURB_COMPLETED_DATE,
+    "DTC OUT DATE" AS DTC_OUT_DATE,
+    "ESTIMATED SPARES COUNT" AS ESTIMATED_SPARES_COUNT,
+    "ESTIMATION AMOUNT" AS ESTIMATED_REFURB_COST,
+    "WORK END" AS WORK_END_DATE,
+    "TECHNICIAN NAME (END WORK)" AS TECHNICIAN_NAME,
+    "LUBRICATIONS :" AS LUBRICATIONS_COST,
+    "BATTERY :" AS BATTERY_COST,
+    "TIRE :" AS TIRE_COST,
+    "SPARES:" AS SPARES_COST,
+    "PAINT, TINKER, & OTHERS :" AS PAINT_TINKER_OTHERS_COST,
+    "OUTSIDE WORK :" AS OUTSIDE_WORK_COST,
+    "TOTAL RF COST:" AS TOTAL_REFURB_COST,
+    "STATUS" AS REFURBISHMENT_STATUS,
+    "REMARKS" AS REFURB_REMARKS
+  FROM RAW_DATA.CONFIRMATIONS
+
+)
+
+SELECT *
+FROM source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+        );
+[0m17:23:04.220090 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:23:04.741659 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01af8829-0000-77d4-0005-cb460001210e
+[0m17:23:04.742701 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 000904 (42000): SQL compilation error: error line 25 at position 4
+invalid identifier '"VEHICLE RC "'
+[0m17:23:04.743323 [debug] [Thread-1 (]: Timing info for model.invx1.dtc_dbt (execute): 17:23:04.200039 => 17:23:04.743206
+[0m17:23:04.743598 [debug] [Thread-1 (]: On model.invx1.dtc_dbt: Close
+[0m17:23:04.844506 [debug] [Thread-1 (]: Database Error in model dtc_dbt (models/example/dtc_dbt.sql)
+  000904 (42000): SQL compilation error: error line 25 at position 4
+  invalid identifier '"VEHICLE RC "'
+  compiled Code at target/run/invx1/models/example/dtc_dbt.sql
+[0m17:23:04.845150 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a5a3eed9-da46-45fc-b4d8-4697cfb87f21', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f903c3e8c70>]}
+[0m17:23:04.845586 [error] [Thread-1 (]: 1 of 1 ERROR creating sql table model CLEANED_DATA.dtc_dbt ..................... [[31mERROR[0m in 0.65s]
+[0m17:23:04.845961 [debug] [Thread-1 (]: Finished running node model.invx1.dtc_dbt
+[0m17:23:04.848550 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:23:04.849597 [debug] [MainThread]: Connection 'model.invx1.dtc_dbt' was properly closed.
+[0m17:23:04.850520 [info ] [MainThread]: 
+[0m17:23:04.851502 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 1.97 seconds (1.97s).
+[0m17:23:04.853331 [debug] [MainThread]: Command end result
+[0m17:23:04.861062 [info ] [MainThread]: 
+[0m17:23:04.861607 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m17:23:04.861988 [info ] [MainThread]: 
+[0m17:23:04.862351 [error] [MainThread]:   Database Error in model dtc_dbt (models/example/dtc_dbt.sql)
+  000904 (42000): SQL compilation error: error line 25 at position 4
+  invalid identifier '"VEHICLE RC "'
+  compiled Code at target/run/invx1/models/example/dtc_dbt.sql
+[0m17:23:04.862705 [info ] [MainThread]: 
+[0m17:23:04.863079 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m17:23:04.863816 [debug] [MainThread]: Command `dbt run` failed at 17:23:04.863684 after 2.18 seconds
+[0m17:23:04.864235 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f903f086d10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f903c4e0c40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9035b7c2b0>]}
+[0m17:23:04.864529 [debug] [MainThread]: Flushing usage events
+[0m17:25:11.180286 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feb0ca8ac80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feb0b0d3b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feb0b0d3af0>]}
+
+
+============================== 17:25:11.205337 | 60fe2f7e-a097-4e12-bad7-c918b06137ee ==============================
+[0m17:25:11.205337 [info ] [MainThread]: Running with dbt=1.6.3
+[0m17:25:11.205854 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/lap10/Desktop/InvX', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/home/lap10/Desktop/InvX/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt run --models dtc_dbt', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m17:25:11.322561 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '60fe2f7e-a097-4e12-bad7-c918b06137ee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feb0bb89ba0>]}
+[0m17:25:11.328015 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '60fe2f7e-a097-4e12-bad7-c918b06137ee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feb09fd61d0>]}
+[0m17:25:11.328543 [info ] [MainThread]: Registered adapter: snowflake=1.6.3
+[0m17:25:11.333655 [debug] [MainThread]: checksum: 800ab10c53db38b54e69cd328777f0c48b6374b8a89466e8ff54aa9acb452b75, vars: {}, profile: , target: , version: 1.6.3
+[0m17:25:11.345403 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m17:25:11.345967 [debug] [MainThread]: Partial parsing: updated file: invx1://models/example/dtc_dbt.sql
+[0m17:25:11.370566 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '60fe2f7e-a097-4e12-bad7-c918b06137ee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feb05a640d0>]}
+[0m17:25:11.376430 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '60fe2f7e-a097-4e12-bad7-c918b06137ee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feb05b29de0>]}
+[0m17:25:11.376875 [info ] [MainThread]: Found 5 models, 0 sources, 0 exposures, 0 metrics, 372 macros, 0 groups, 0 semantic models
+[0m17:25:11.377162 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '60fe2f7e-a097-4e12-bad7-c918b06137ee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feb05b29d80>]}
+[0m17:25:11.378006 [info ] [MainThread]: 
+[0m17:25:11.378635 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m17:25:11.379662 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_INVX_DATABASE'
+[0m17:25:11.388352 [debug] [ThreadPool]: Using snowflake connection "list_INVX_DATABASE"
+[0m17:25:11.388776 [debug] [ThreadPool]: On list_INVX_DATABASE: /* {"app": "dbt", "dbt_version": "1.6.3", "profile_name": "invx1", "target_name": "dev", "connection_name": "list_INVX_DATABASE"} */
+show terse schemas in database INVX_DATABASE
+    limit 10000
+[0m17:25:11.389043 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:25:12.024872 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1.0 seconds
+[0m17:25:12.028060 [debug] [ThreadPool]: On list_INVX_DATABASE: Close
+[0m17:25:12.132253 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_INVX_DATABASE, now list_INVX_DATABASE_CLEANED_DATA)
+[0m17:25:12.142611 [debug] [ThreadPool]: Using snowflake connection "list_INVX_DATABASE_CLEANED_DATA"
+[0m17:25:12.142991 [debug] [ThreadPool]: On list_INVX_DATABASE_CLEANED_DATA: /* {"app": "dbt", "dbt_version": "1.6.3", "profile_name": "invx1", "target_name": "dev", "connection_name": "list_INVX_DATABASE_CLEANED_DATA"} */
+show terse objects in INVX_DATABASE.CLEANED_DATA limit 10000
+[0m17:25:12.143253 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:25:12.652941 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1.0 seconds
+[0m17:25:12.654123 [debug] [ThreadPool]: On list_INVX_DATABASE_CLEANED_DATA: Close
+[0m17:25:12.750950 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '60fe2f7e-a097-4e12-bad7-c918b06137ee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feb05aa3d30>]}
+[0m17:25:12.751899 [info ] [MainThread]: Concurrency: 10 threads (target='dev')
+[0m17:25:12.752357 [info ] [MainThread]: 
+[0m17:25:12.757219 [debug] [Thread-1 (]: Began running node model.invx1.dtc_dbt
+[0m17:25:12.758882 [info ] [Thread-1 (]: 1 of 1 START sql table model CLEANED_DATA.dtc_dbt .............................. [RUN]
+[0m17:25:12.760216 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_INVX_DATABASE_CLEANED_DATA, now model.invx1.dtc_dbt)
+[0m17:25:12.760836 [debug] [Thread-1 (]: Began compiling node model.invx1.dtc_dbt
+[0m17:25:12.766411 [debug] [Thread-1 (]: Writing injected SQL for node "model.invx1.dtc_dbt"
+[0m17:25:12.767097 [debug] [Thread-1 (]: Timing info for model.invx1.dtc_dbt (compile): 17:25:12.761172 => 17:25:12.766928
+[0m17:25:12.767399 [debug] [Thread-1 (]: Began executing node model.invx1.dtc_dbt
+[0m17:25:12.786112 [debug] [Thread-1 (]: Writing runtime sql for node "model.invx1.dtc_dbt"
+[0m17:25:12.787567 [debug] [Thread-1 (]: Using snowflake connection "model.invx1.dtc_dbt"
+[0m17:25:12.788020 [debug] [Thread-1 (]: On model.invx1.dtc_dbt: /* {"app": "dbt", "dbt_version": "1.6.3", "profile_name": "invx1", "target_name": "dev", "node_id": "model.invx1.dtc_dbt"} */
+create or replace transient table INVX_DATABASE.CLEANED_DATA.dtc_dbt
+         as
+        (
+
+WITH source_data AS (
+  SELECT
+    "VEHICLE RC" AS REGISTRATION_NUMBER,
+    "MAKE" AS BRAND,
+    "MODEL" AS MODEL,
+    "KEY COUNT" AS VEHICLE_KEYS_AVAILABLE_COUNT,
+    "CHASIS NO" AS VEHICLE_CHASIS_NO,
+    "ENGINE NO" AS VEHICLE_ENGINE_NO,
+    "RETAIL / WHOLESALE" AS VEHICLE_TO_RETAIL_OR_WHOLESALE,
+    "RC AVAILABILITY AT SOURCE" AS RC_AVAILABILITY_AT_SOURCE,
+    "DTC Name" AS DTC_CENTER_NAME,
+    "DTC IN DATE(DD/MM/YY)" AS DTC_VEHICLE_ARRIVED_DATE,
+    "YEAR" AS VEHICLE_MANUFACTURED_YEAR,
+    "L2 DATE (DD/MM/YY)" AS L2_INSPECTION_DATE,
+    "ESTIMATION DATE" AS ESTIMATED_REFURB_DATE,
+    "APPROVAL DATE" AS ESTIMATION_APPROVAL_DATE,
+    "BAY ALLOCATION" AS BAY_ALLOCATION_DATE,
+    "PRODUCTION DATE" AS REFURB_COMPLETED_DATE,
+    "DTC OUT DATE" AS DTC_OUT_DATE,
+    "ESTIMATED SPARES COUNT" AS ESTIMATED_SPARES_COUNT,
+    "ESTIMATION AMOUNT" AS ESTIMATED_REFURB_COST,
+    "WORK END" AS WORK_END_DATE,
+    "TECHNICIAN NAME (END WORK)" AS TECHNICIAN_NAME,
+    "LUBRICATIONS :" AS LUBRICATIONS_COST,
+    "BATTERY :" AS BATTERY_COST,
+    "TIRE :" AS TIRE_COST,
+    "SPARES:" AS SPARES_COST,
+    "PAINT, TINKER, & OTHERS :" AS PAINT_TINKER_OTHERS_COST,
+    "OUTSIDE WORK :" AS OUTSIDE_WORK_COST,
+    "TOTAL RF COST:" AS TOTAL_REFURB_COST,
+    "STATUS" AS REFURBISHMENT_STATUS,
+    "REMARKS" AS REFURB_REMARKS
+  FROM RAW_DATA.CONFIRMATIONS
+
+)
+
+SELECT *
+FROM source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+        );
+[0m17:25:12.788333 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:25:13.146945 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01af882b-0000-77d4-0005-cb4600012116
+[0m17:25:13.147551 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 000904 (42000): SQL compilation error: error line 7 at position 4
+invalid identifier '"VEHICLE RC"'
+[0m17:25:13.148246 [debug] [Thread-1 (]: Timing info for model.invx1.dtc_dbt (execute): 17:25:12.767605 => 17:25:13.148093
+[0m17:25:13.148507 [debug] [Thread-1 (]: On model.invx1.dtc_dbt: Close
+[0m17:25:13.300094 [debug] [Thread-1 (]: Database Error in model dtc_dbt (models/example/dtc_dbt.sql)
+  000904 (42000): SQL compilation error: error line 7 at position 4
+  invalid identifier '"VEHICLE RC"'
+  compiled Code at target/run/invx1/models/example/dtc_dbt.sql
+[0m17:25:13.300823 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '60fe2f7e-a097-4e12-bad7-c918b06137ee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feb05aa1720>]}
+[0m17:25:13.301590 [error] [Thread-1 (]: 1 of 1 ERROR creating sql table model CLEANED_DATA.dtc_dbt ..................... [[31mERROR[0m in 0.54s]
+[0m17:25:13.302399 [debug] [Thread-1 (]: Finished running node model.invx1.dtc_dbt
+[0m17:25:13.305761 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:25:13.306529 [debug] [MainThread]: Connection 'model.invx1.dtc_dbt' was properly closed.
+[0m17:25:13.307215 [info ] [MainThread]: 
+[0m17:25:13.308201 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 1.93 seconds (1.93s).
+[0m17:25:13.309074 [debug] [MainThread]: Command end result
+[0m17:25:13.316327 [info ] [MainThread]: 
+[0m17:25:13.316741 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m17:25:13.316990 [info ] [MainThread]: 
+[0m17:25:13.317245 [error] [MainThread]:   Database Error in model dtc_dbt (models/example/dtc_dbt.sql)
+  000904 (42000): SQL compilation error: error line 7 at position 4
+  invalid identifier '"VEHICLE RC"'
+  compiled Code at target/run/invx1/models/example/dtc_dbt.sql
+[0m17:25:13.317487 [info ] [MainThread]: 
+[0m17:25:13.317712 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m17:25:13.318102 [debug] [MainThread]: Command `dbt run` failed at 17:25:13.318026 after 2.14 seconds
+[0m17:25:13.318394 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feb0ca8ac80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feb09fd61d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7feadb5c6950>]}
+[0m17:25:13.318673 [debug] [MainThread]: Flushing usage events
+[0m17:25:39.779260 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa6188ace0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa5fed3bb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa5fed3b50>]}
+
+
+============================== 17:25:39.802136 | 2731522b-57b5-4c63-8ae3-b545210c9bcd ==============================
+[0m17:25:39.802136 [info ] [MainThread]: Running with dbt=1.6.3
+[0m17:25:39.802537 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/home/lap10/Desktop/InvX/logs', 'profiles_dir': '/home/lap10/Desktop/InvX', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt run --models dtc_dbt', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m17:25:39.918846 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2731522b-57b5-4c63-8ae3-b545210c9bcd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa60989c00>]}
+[0m17:25:39.923962 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2731522b-57b5-4c63-8ae3-b545210c9bcd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa5c1aa350>]}
+[0m17:25:39.924434 [info ] [MainThread]: Registered adapter: snowflake=1.6.3
+[0m17:25:39.929256 [debug] [MainThread]: checksum: 800ab10c53db38b54e69cd328777f0c48b6374b8a89466e8ff54aa9acb452b75, vars: {}, profile: , target: , version: 1.6.3
+[0m17:25:39.941042 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m17:25:39.941656 [debug] [MainThread]: Partial parsing: updated file: invx1://models/example/dtc_dbt.sql
+[0m17:25:39.965834 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2731522b-57b5-4c63-8ae3-b545210c9bcd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa5a8640d0>]}
+[0m17:25:39.971675 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2731522b-57b5-4c63-8ae3-b545210c9bcd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa5a929e40>]}
+[0m17:25:39.972203 [info ] [MainThread]: Found 5 models, 0 sources, 0 exposures, 0 metrics, 372 macros, 0 groups, 0 semantic models
+[0m17:25:39.972491 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2731522b-57b5-4c63-8ae3-b545210c9bcd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa5a929de0>]}
+[0m17:25:39.973310 [info ] [MainThread]: 
+[0m17:25:39.973897 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m17:25:39.974930 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_INVX_DATABASE'
+[0m17:25:39.983244 [debug] [ThreadPool]: Using snowflake connection "list_INVX_DATABASE"
+[0m17:25:39.983603 [debug] [ThreadPool]: On list_INVX_DATABASE: /* {"app": "dbt", "dbt_version": "1.6.3", "profile_name": "invx1", "target_name": "dev", "connection_name": "list_INVX_DATABASE"} */
+show terse schemas in database INVX_DATABASE
+    limit 10000
+[0m17:25:39.983823 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:25:40.593093 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1.0 seconds
+[0m17:25:40.595673 [debug] [ThreadPool]: On list_INVX_DATABASE: Close
+[0m17:25:40.699848 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_INVX_DATABASE, now list_INVX_DATABASE_CLEANED_DATA)
+[0m17:25:40.709840 [debug] [ThreadPool]: Using snowflake connection "list_INVX_DATABASE_CLEANED_DATA"
+[0m17:25:40.710140 [debug] [ThreadPool]: On list_INVX_DATABASE_CLEANED_DATA: /* {"app": "dbt", "dbt_version": "1.6.3", "profile_name": "invx1", "target_name": "dev", "connection_name": "list_INVX_DATABASE_CLEANED_DATA"} */
+show terse objects in INVX_DATABASE.CLEANED_DATA limit 10000
+[0m17:25:40.710347 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:25:41.436822 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1.0 seconds
+[0m17:25:41.440260 [debug] [ThreadPool]: On list_INVX_DATABASE_CLEANED_DATA: Close
+[0m17:25:41.539131 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2731522b-57b5-4c63-8ae3-b545210c9bcd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa5a898eb0>]}
+[0m17:25:41.541140 [info ] [MainThread]: Concurrency: 10 threads (target='dev')
+[0m17:25:41.542120 [info ] [MainThread]: 
+[0m17:25:41.547323 [debug] [Thread-1 (]: Began running node model.invx1.dtc_dbt
+[0m17:25:41.548170 [info ] [Thread-1 (]: 1 of 1 START sql table model CLEANED_DATA.dtc_dbt .............................. [RUN]
+[0m17:25:41.548975 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_INVX_DATABASE_CLEANED_DATA, now model.invx1.dtc_dbt)
+[0m17:25:41.549394 [debug] [Thread-1 (]: Began compiling node model.invx1.dtc_dbt
+[0m17:25:41.554889 [debug] [Thread-1 (]: Writing injected SQL for node "model.invx1.dtc_dbt"
+[0m17:25:41.555472 [debug] [Thread-1 (]: Timing info for model.invx1.dtc_dbt (compile): 17:25:41.549671 => 17:25:41.555300
+[0m17:25:41.555767 [debug] [Thread-1 (]: Began executing node model.invx1.dtc_dbt
+[0m17:25:41.574619 [debug] [Thread-1 (]: Writing runtime sql for node "model.invx1.dtc_dbt"
+[0m17:25:41.575984 [debug] [Thread-1 (]: Using snowflake connection "model.invx1.dtc_dbt"
+[0m17:25:41.576376 [debug] [Thread-1 (]: On model.invx1.dtc_dbt: /* {"app": "dbt", "dbt_version": "1.6.3", "profile_name": "invx1", "target_name": "dev", "node_id": "model.invx1.dtc_dbt"} */
+create or replace transient table INVX_DATABASE.CLEANED_DATA.dtc_dbt
+         as
+        (
+
+WITH source_data AS (
+  SELECT
+    "MAKE" AS BRAND,
+    "VEHICLE RC" AS REGISTRATION_NUMBER,
+    "MODEL" AS MODEL,
+    "KEY COUNT" AS VEHICLE_KEYS_AVAILABLE_COUNT,
+    "CHASIS NO" AS VEHICLE_CHASIS_NO,
+    "ENGINE NO" AS VEHICLE_ENGINE_NO,
+    "RETAIL / WHOLESALE" AS VEHICLE_TO_RETAIL_OR_WHOLESALE,
+    "RC AVAILABILITY AT SOURCE" AS RC_AVAILABILITY_AT_SOURCE,
+    "DTC Name" AS DTC_CENTER_NAME,
+    "DTC IN DATE(DD/MM/YY)" AS DTC_VEHICLE_ARRIVED_DATE,
+    "YEAR" AS VEHICLE_MANUFACTURED_YEAR,
+    "L2 DATE (DD/MM/YY)" AS L2_INSPECTION_DATE,
+    "ESTIMATION DATE" AS ESTIMATED_REFURB_DATE,
+    "APPROVAL DATE" AS ESTIMATION_APPROVAL_DATE,
+    "BAY ALLOCATION" AS BAY_ALLOCATION_DATE,
+    "PRODUCTION DATE" AS REFURB_COMPLETED_DATE,
+    "DTC OUT DATE" AS DTC_OUT_DATE,
+    "ESTIMATED SPARES COUNT" AS ESTIMATED_SPARES_COUNT,
+    "ESTIMATION AMOUNT" AS ESTIMATED_REFURB_COST,
+    "WORK END" AS WORK_END_DATE,
+    "TECHNICIAN NAME (END WORK)" AS TECHNICIAN_NAME,
+    "LUBRICATIONS :" AS LUBRICATIONS_COST,
+    "BATTERY :" AS BATTERY_COST,
+    "TIRE :" AS TIRE_COST,
+    "SPARES:" AS SPARES_COST,
+    "PAINT, TINKER, & OTHERS :" AS PAINT_TINKER_OTHERS_COST,
+    "OUTSIDE WORK :" AS OUTSIDE_WORK_COST,
+    "TOTAL RF COST:" AS TOTAL_REFURB_COST,
+    "STATUS" AS REFURBISHMENT_STATUS,
+    "REMARKS" AS REFURB_REMARKS
+  FROM RAW_DATA.CONFIRMATIONS
+
+)
+
+SELECT *
+FROM source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+        );
+[0m17:25:41.576690 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:25:41.903464 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01af882b-0000-77d4-0005-cb4600012122
+[0m17:25:41.904734 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 000904 (42000): SQL compilation error: error line 8 at position 4
+invalid identifier '"VEHICLE RC"'
+[0m17:25:41.905797 [debug] [Thread-1 (]: Timing info for model.invx1.dtc_dbt (execute): 17:25:41.555950 => 17:25:41.905482
+[0m17:25:41.906392 [debug] [Thread-1 (]: On model.invx1.dtc_dbt: Close
+[0m17:25:42.010393 [debug] [Thread-1 (]: Database Error in model dtc_dbt (models/example/dtc_dbt.sql)
+  000904 (42000): SQL compilation error: error line 8 at position 4
+  invalid identifier '"VEHICLE RC"'
+  compiled Code at target/run/invx1/models/example/dtc_dbt.sql
+[0m17:25:42.010882 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2731522b-57b5-4c63-8ae3-b545210c9bcd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa5a928c70>]}
+[0m17:25:42.011352 [error] [Thread-1 (]: 1 of 1 ERROR creating sql table model CLEANED_DATA.dtc_dbt ..................... [[31mERROR[0m in 0.46s]
+[0m17:25:42.011824 [debug] [Thread-1 (]: Finished running node model.invx1.dtc_dbt
+[0m17:25:42.014796 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:25:42.015766 [debug] [MainThread]: Connection 'model.invx1.dtc_dbt' was properly closed.
+[0m17:25:42.016649 [info ] [MainThread]: 
+[0m17:25:42.017511 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 2.04 seconds (2.04s).
+[0m17:25:42.018707 [debug] [MainThread]: Command end result
+[0m17:25:42.027039 [info ] [MainThread]: 
+[0m17:25:42.027610 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m17:25:42.028020 [info ] [MainThread]: 
+[0m17:25:42.028416 [error] [MainThread]:   Database Error in model dtc_dbt (models/example/dtc_dbt.sql)
+  000904 (42000): SQL compilation error: error line 8 at position 4
+  invalid identifier '"VEHICLE RC"'
+  compiled Code at target/run/invx1/models/example/dtc_dbt.sql
+[0m17:25:42.028807 [info ] [MainThread]: 
+[0m17:25:42.029218 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m17:25:42.029864 [debug] [MainThread]: Command `dbt run` failed at 17:25:42.029750 after 2.25 seconds
+[0m17:25:42.030296 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa6188ace0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa5c1aa350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa58430160>]}
+[0m17:25:42.030720 [debug] [MainThread]: Flushing usage events
+[0m17:25:56.696616 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb3f8c86ce0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb3f71cbb80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb3f71cbaf0>]}
+
+
+============================== 17:25:56.719176 | f77f5d63-b2b3-4049-b991-4176387e8d80 ==============================
+[0m17:25:56.719176 [info ] [MainThread]: Running with dbt=1.6.3
+[0m17:25:56.719616 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/lap10/Desktop/InvX', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/home/lap10/Desktop/InvX/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt run --models dtc_dbt', 'send_anonymous_usage_stats': 'True'}
+[0m17:25:56.832225 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f77f5d63-b2b3-4049-b991-4176387e8d80', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb3f7cfdc00>]}
+[0m17:25:56.837292 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f77f5d63-b2b3-4049-b991-4176387e8d80', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb3f5f155a0>]}
+[0m17:25:56.837752 [info ] [MainThread]: Registered adapter: snowflake=1.6.3
+[0m17:25:56.842573 [debug] [MainThread]: checksum: 800ab10c53db38b54e69cd328777f0c48b6374b8a89466e8ff54aa9acb452b75, vars: {}, profile: , target: , version: 1.6.3
+[0m17:25:56.854377 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m17:25:56.855059 [debug] [MainThread]: Partial parsing: updated file: invx1://models/example/dtc_dbt.sql
+[0m17:25:56.879186 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f77f5d63-b2b3-4049-b991-4176387e8d80', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb3f1b5c0d0>]}
+[0m17:25:56.884092 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f77f5d63-b2b3-4049-b991-4176387e8d80', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb3f33b5e40>]}
+[0m17:25:56.884442 [info ] [MainThread]: Found 5 models, 0 sources, 0 exposures, 0 metrics, 372 macros, 0 groups, 0 semantic models
+[0m17:25:56.884688 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f77f5d63-b2b3-4049-b991-4176387e8d80', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb3f33b5de0>]}
+[0m17:25:56.885370 [info ] [MainThread]: 
+[0m17:25:56.885809 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m17:25:56.886699 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_INVX_DATABASE'
+[0m17:25:56.894974 [debug] [ThreadPool]: Using snowflake connection "list_INVX_DATABASE"
+[0m17:25:56.895296 [debug] [ThreadPool]: On list_INVX_DATABASE: /* {"app": "dbt", "dbt_version": "1.6.3", "profile_name": "invx1", "target_name": "dev", "connection_name": "list_INVX_DATABASE"} */
+show terse schemas in database INVX_DATABASE
+    limit 10000
+[0m17:25:56.895551 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:25:57.593552 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1.0 seconds
+[0m17:25:57.597945 [debug] [ThreadPool]: On list_INVX_DATABASE: Close
+[0m17:25:57.705632 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_INVX_DATABASE, now list_INVX_DATABASE_CLEANED_DATA)
+[0m17:25:57.715078 [debug] [ThreadPool]: Using snowflake connection "list_INVX_DATABASE_CLEANED_DATA"
+[0m17:25:57.715371 [debug] [ThreadPool]: On list_INVX_DATABASE_CLEANED_DATA: /* {"app": "dbt", "dbt_version": "1.6.3", "profile_name": "invx1", "target_name": "dev", "connection_name": "list_INVX_DATABASE_CLEANED_DATA"} */
+show terse objects in INVX_DATABASE.CLEANED_DATA limit 10000
+[0m17:25:57.715605 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:25:58.333331 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1.0 seconds
+[0m17:25:58.336526 [debug] [ThreadPool]: On list_INVX_DATABASE_CLEANED_DATA: Close
+[0m17:25:58.438670 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f77f5d63-b2b3-4049-b991-4176387e8d80', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb3f1b9bd30>]}
+[0m17:25:58.440483 [info ] [MainThread]: Concurrency: 10 threads (target='dev')
+[0m17:25:58.441317 [info ] [MainThread]: 
+[0m17:25:58.444545 [debug] [Thread-1 (]: Began running node model.invx1.dtc_dbt
+[0m17:25:58.445581 [info ] [Thread-1 (]: 1 of 1 START sql table model CLEANED_DATA.dtc_dbt .............................. [RUN]
+[0m17:25:58.446657 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_INVX_DATABASE_CLEANED_DATA, now model.invx1.dtc_dbt)
+[0m17:25:58.447216 [debug] [Thread-1 (]: Began compiling node model.invx1.dtc_dbt
+[0m17:25:58.453673 [debug] [Thread-1 (]: Writing injected SQL for node "model.invx1.dtc_dbt"
+[0m17:25:58.454318 [debug] [Thread-1 (]: Timing info for model.invx1.dtc_dbt (compile): 17:25:58.447583 => 17:25:58.454129
+[0m17:25:58.454628 [debug] [Thread-1 (]: Began executing node model.invx1.dtc_dbt
+[0m17:25:58.471990 [debug] [Thread-1 (]: Writing runtime sql for node "model.invx1.dtc_dbt"
+[0m17:25:58.473084 [debug] [Thread-1 (]: Using snowflake connection "model.invx1.dtc_dbt"
+[0m17:25:58.473416 [debug] [Thread-1 (]: On model.invx1.dtc_dbt: /* {"app": "dbt", "dbt_version": "1.6.3", "profile_name": "invx1", "target_name": "dev", "node_id": "model.invx1.dtc_dbt"} */
+create or replace transient table INVX_DATABASE.CLEANED_DATA.dtc_dbt
+         as
+        (
+
+WITH source_data AS (
+  SELECT
+    "MAKE" AS BRAND,
+    -- "VEHICLE RC" AS REGISTRATION_NUMBER,
+    "MODEL" AS MODEL,
+    "KEY COUNT" AS VEHICLE_KEYS_AVAILABLE_COUNT,
+    "CHASIS NO" AS VEHICLE_CHASIS_NO,
+    "ENGINE NO" AS VEHICLE_ENGINE_NO,
+    "RETAIL / WHOLESALE" AS VEHICLE_TO_RETAIL_OR_WHOLESALE,
+    "RC AVAILABILITY AT SOURCE" AS RC_AVAILABILITY_AT_SOURCE,
+    "DTC Name" AS DTC_CENTER_NAME,
+    "DTC IN DATE(DD/MM/YY)" AS DTC_VEHICLE_ARRIVED_DATE,
+    "YEAR" AS VEHICLE_MANUFACTURED_YEAR,
+    "L2 DATE (DD/MM/YY)" AS L2_INSPECTION_DATE,
+    "ESTIMATION DATE" AS ESTIMATED_REFURB_DATE,
+    "APPROVAL DATE" AS ESTIMATION_APPROVAL_DATE,
+    "BAY ALLOCATION" AS BAY_ALLOCATION_DATE,
+    "PRODUCTION DATE" AS REFURB_COMPLETED_DATE,
+    "DTC OUT DATE" AS DTC_OUT_DATE,
+    "ESTIMATED SPARES COUNT" AS ESTIMATED_SPARES_COUNT,
+    "ESTIMATION AMOUNT" AS ESTIMATED_REFURB_COST,
+    "WORK END" AS WORK_END_DATE,
+    "TECHNICIAN NAME (END WORK)" AS TECHNICIAN_NAME,
+    "LUBRICATIONS :" AS LUBRICATIONS_COST,
+    "BATTERY :" AS BATTERY_COST,
+    "TIRE :" AS TIRE_COST,
+    "SPARES:" AS SPARES_COST,
+    "PAINT, TINKER, & OTHERS :" AS PAINT_TINKER_OTHERS_COST,
+    "OUTSIDE WORK :" AS OUTSIDE_WORK_COST,
+    "TOTAL RF COST:" AS TOTAL_REFURB_COST,
+    "STATUS" AS REFURBISHMENT_STATUS,
+    "REMARKS" AS REFURB_REMARKS
+  FROM RAW_DATA.CONFIRMATIONS
+
+)
+
+SELECT *
+FROM source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+        );
+[0m17:25:58.473700 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:25:58.841509 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01af882b-0000-77d4-0005-cb4600012126
+[0m17:25:58.841877 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 000904 (42000): SQL compilation error: error line 10 at position 4
+invalid identifier '"KEY COUNT"'
+[0m17:25:58.842224 [debug] [Thread-1 (]: Timing info for model.invx1.dtc_dbt (execute): 17:25:58.454815 => 17:25:58.842110
+[0m17:25:58.842462 [debug] [Thread-1 (]: On model.invx1.dtc_dbt: Close
+[0m17:25:58.936055 [debug] [Thread-1 (]: Database Error in model dtc_dbt (models/example/dtc_dbt.sql)
+  000904 (42000): SQL compilation error: error line 10 at position 4
+  invalid identifier '"KEY COUNT"'
+  compiled Code at target/run/invx1/models/example/dtc_dbt.sql
+[0m17:25:58.936893 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f77f5d63-b2b3-4049-b991-4176387e8d80', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb3f1b99780>]}
+[0m17:25:58.937318 [error] [Thread-1 (]: 1 of 1 ERROR creating sql table model CLEANED_DATA.dtc_dbt ..................... [[31mERROR[0m in 0.49s]
+[0m17:25:58.937695 [debug] [Thread-1 (]: Finished running node model.invx1.dtc_dbt
+[0m17:25:58.940185 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:25:58.940793 [debug] [MainThread]: Connection 'model.invx1.dtc_dbt' was properly closed.
+[0m17:25:58.941303 [info ] [MainThread]: 
+[0m17:25:58.941766 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 2.06 seconds (2.06s).
+[0m17:25:58.942502 [debug] [MainThread]: Command end result
+[0m17:25:58.948363 [info ] [MainThread]: 
+[0m17:25:58.948772 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m17:25:58.949028 [info ] [MainThread]: 
+[0m17:25:58.949254 [error] [MainThread]:   Database Error in model dtc_dbt (models/example/dtc_dbt.sql)
+  000904 (42000): SQL compilation error: error line 10 at position 4
+  invalid identifier '"KEY COUNT"'
+  compiled Code at target/run/invx1/models/example/dtc_dbt.sql
+[0m17:25:58.949482 [info ] [MainThread]: 
+[0m17:25:58.949696 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m17:25:58.950173 [debug] [MainThread]: Command `dbt run` failed at 17:25:58.950086 after 2.26 seconds
+[0m17:25:58.950485 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb3f8c86ce0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb3f5f155a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb3cf6be350>]}
+[0m17:25:58.950798 [debug] [MainThread]: Flushing usage events
+[0m17:26:31.662377 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5d38392d10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5d369d7be0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5d369d7b80>]}
+
+
+============================== 17:26:31.685161 | cc919a26-910c-4ea3-974c-bb744fe2578d ==============================
+[0m17:26:31.685161 [info ] [MainThread]: Running with dbt=1.6.3
+[0m17:26:31.685526 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/home/lap10/Desktop/InvX', 'log_path': '/home/lap10/Desktop/InvX/logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run --models dtc_dbt', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m17:26:31.799265 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'cc919a26-910c-4ea3-974c-bb744fe2578d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5d37475c30>]}
+[0m17:26:31.804838 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'cc919a26-910c-4ea3-974c-bb744fe2578d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5d3573c610>]}
+[0m17:26:31.805483 [info ] [MainThread]: Registered adapter: snowflake=1.6.3
+[0m17:26:31.810868 [debug] [MainThread]: checksum: 800ab10c53db38b54e69cd328777f0c48b6374b8a89466e8ff54aa9acb452b75, vars: {}, profile: , target: , version: 1.6.3
+[0m17:26:31.823065 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m17:26:31.823623 [debug] [MainThread]: Partial parsing: updated file: invx1://models/example/dtc_dbt.sql
+[0m17:26:31.847279 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'cc919a26-910c-4ea3-974c-bb744fe2578d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5d313680d0>]}
+[0m17:26:31.852832 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'cc919a26-910c-4ea3-974c-bb744fe2578d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5d32bbddb0>]}
+[0m17:26:31.853207 [info ] [MainThread]: Found 5 models, 0 sources, 0 exposures, 0 metrics, 372 macros, 0 groups, 0 semantic models
+[0m17:26:31.853477 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cc919a26-910c-4ea3-974c-bb744fe2578d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5d32bbdde0>]}
+[0m17:26:31.854233 [info ] [MainThread]: 
+[0m17:26:31.854740 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m17:26:31.855800 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_INVX_DATABASE'
+[0m17:26:31.864087 [debug] [ThreadPool]: Using snowflake connection "list_INVX_DATABASE"
+[0m17:26:31.864405 [debug] [ThreadPool]: On list_INVX_DATABASE: /* {"app": "dbt", "dbt_version": "1.6.3", "profile_name": "invx1", "target_name": "dev", "connection_name": "list_INVX_DATABASE"} */
+show terse schemas in database INVX_DATABASE
+    limit 10000
+[0m17:26:31.864634 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:26:32.518708 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1.0 seconds
+[0m17:26:32.521070 [debug] [ThreadPool]: On list_INVX_DATABASE: Close
+[0m17:26:32.625906 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_INVX_DATABASE, now list_INVX_DATABASE_CLEANED_DATA)
+[0m17:26:32.631241 [debug] [ThreadPool]: Using snowflake connection "list_INVX_DATABASE_CLEANED_DATA"
+[0m17:26:32.631550 [debug] [ThreadPool]: On list_INVX_DATABASE_CLEANED_DATA: /* {"app": "dbt", "dbt_version": "1.6.3", "profile_name": "invx1", "target_name": "dev", "connection_name": "list_INVX_DATABASE_CLEANED_DATA"} */
+show terse objects in INVX_DATABASE.CLEANED_DATA limit 10000
+[0m17:26:32.631776 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:26:33.351956 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1.0 seconds
+[0m17:26:33.355235 [debug] [ThreadPool]: On list_INVX_DATABASE_CLEANED_DATA: Close
+[0m17:26:33.455361 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cc919a26-910c-4ea3-974c-bb744fe2578d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5d31311e10>]}
+[0m17:26:33.457336 [info ] [MainThread]: Concurrency: 10 threads (target='dev')
+[0m17:26:33.458120 [info ] [MainThread]: 
+[0m17:26:33.464304 [debug] [Thread-1 (]: Began running node model.invx1.dtc_dbt
+[0m17:26:33.465206 [info ] [Thread-1 (]: 1 of 1 START sql table model CLEANED_DATA.dtc_dbt .............................. [RUN]
+[0m17:26:33.466327 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_INVX_DATABASE_CLEANED_DATA, now model.invx1.dtc_dbt)
+[0m17:26:33.467018 [debug] [Thread-1 (]: Began compiling node model.invx1.dtc_dbt
+[0m17:26:33.475574 [debug] [Thread-1 (]: Writing injected SQL for node "model.invx1.dtc_dbt"
+[0m17:26:33.476531 [debug] [Thread-1 (]: Timing info for model.invx1.dtc_dbt (compile): 17:26:33.467526 => 17:26:33.476291
+[0m17:26:33.476836 [debug] [Thread-1 (]: Began executing node model.invx1.dtc_dbt
+[0m17:26:33.494552 [debug] [Thread-1 (]: Writing runtime sql for node "model.invx1.dtc_dbt"
+[0m17:26:33.495706 [debug] [Thread-1 (]: Using snowflake connection "model.invx1.dtc_dbt"
+[0m17:26:33.496044 [debug] [Thread-1 (]: On model.invx1.dtc_dbt: /* {"app": "dbt", "dbt_version": "1.6.3", "profile_name": "invx1", "target_name": "dev", "node_id": "model.invx1.dtc_dbt"} */
+create or replace transient table INVX_DATABASE.CLEANED_DATA.dtc_dbt
+         as
+        (
+
+WITH source_data AS (
+  SELECT
+    "MAKE" AS BRAND,
+    "VEHICLE RC" AS REGISTRATION_NUMBER,
+    "MODEL" AS MODEL,
+    "KEY COUNT" AS VEHICLE_KEYS_AVAILABLE_COUNT,
+    "CHASIS NO" AS VEHICLE_CHASIS_NO,
+    "ENGINE NO" AS VEHICLE_ENGINE_NO,
+    "RETAIL / WHOLESALE" AS VEHICLE_TO_RETAIL_OR_WHOLESALE,
+    "RC AVAILABILITY AT SOURCE" AS RC_AVAILABILITY_AT_SOURCE,
+    "DTC Name" AS DTC_CENTER_NAME,
+    "DTC IN DATE(DD/MM/YY)" AS DTC_VEHICLE_ARRIVED_DATE,
+    "YEAR" AS VEHICLE_MANUFACTURED_YEAR,
+    "L2 DATE (DD/MM/YY)" AS L2_INSPECTION_DATE,
+    "ESTIMATION DATE" AS ESTIMATED_REFURB_DATE,
+    "APPROVAL DATE" AS ESTIMATION_APPROVAL_DATE,
+    "BAY ALLOCATION" AS BAY_ALLOCATION_DATE,
+    "PRODUCTION DATE" AS REFURB_COMPLETED_DATE,
+    "DTC OUT DATE" AS DTC_OUT_DATE,
+    "ESTIMATED SPARES COUNT" AS ESTIMATED_SPARES_COUNT,
+    "ESTIMATION AMOUNT" AS ESTIMATED_REFURB_COST,
+    "WORK END" AS WORK_END_DATE,
+    "TECHNICIAN NAME (END WORK)" AS TECHNICIAN_NAME,
+    "LUBRICATIONS :" AS LUBRICATIONS_COST,
+    "BATTERY :" AS BATTERY_COST,
+    "TIRE :" AS TIRE_COST,
+    "SPARES:" AS SPARES_COST,
+    "PAINT, TINKER, & OTHERS :" AS PAINT_TINKER_OTHERS_COST,
+    "OUTSIDE WORK :" AS OUTSIDE_WORK_COST,
+    "TOTAL RF COST:" AS TOTAL_REFURB_COST,
+    "STATUS" AS REFURBISHMENT_STATUS,
+    "REMARKS" AS REFURB_REMARKS
+  FROM RAW_DATA.DTC
+
+)
+
+SELECT *
+FROM source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+        );
+[0m17:26:33.496329 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:26:33.836568 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01af882c-0000-7714-0005-cb4600013132
+[0m17:26:33.837120 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 000904 (42000): SQL compilation error: error line 15 at position 4
+invalid identifier '"DTC Name"'
+[0m17:26:33.837668 [debug] [Thread-1 (]: Timing info for model.invx1.dtc_dbt (execute): 17:26:33.477010 => 17:26:33.837489
+[0m17:26:33.838016 [debug] [Thread-1 (]: On model.invx1.dtc_dbt: Close
+[0m17:26:33.934449 [debug] [Thread-1 (]: Database Error in model dtc_dbt (models/example/dtc_dbt.sql)
+  000904 (42000): SQL compilation error: error line 15 at position 4
+  invalid identifier '"DTC Name"'
+  compiled Code at target/run/invx1/models/example/dtc_dbt.sql
+[0m17:26:33.935575 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'cc919a26-910c-4ea3-974c-bb744fe2578d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5d32bbd480>]}
+[0m17:26:33.936753 [error] [Thread-1 (]: 1 of 1 ERROR creating sql table model CLEANED_DATA.dtc_dbt ..................... [[31mERROR[0m in 0.47s]
+[0m17:26:33.937661 [debug] [Thread-1 (]: Finished running node model.invx1.dtc_dbt
+[0m17:26:33.940061 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:26:33.940541 [debug] [MainThread]: Connection 'model.invx1.dtc_dbt' was properly closed.
+[0m17:26:33.940990 [info ] [MainThread]: 
+[0m17:26:33.941466 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 2.09 seconds (2.09s).
+[0m17:26:33.942205 [debug] [MainThread]: Command end result
+[0m17:26:33.984374 [info ] [MainThread]: 
+[0m17:26:33.984749 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m17:26:33.984977 [info ] [MainThread]: 
+[0m17:26:33.985172 [error] [MainThread]:   Database Error in model dtc_dbt (models/example/dtc_dbt.sql)
+  000904 (42000): SQL compilation error: error line 15 at position 4
+  invalid identifier '"DTC Name"'
+  compiled Code at target/run/invx1/models/example/dtc_dbt.sql
+[0m17:26:33.985360 [info ] [MainThread]: 
+[0m17:26:33.985569 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m17:26:33.986086 [debug] [MainThread]: Command `dbt run` failed at 17:26:33.985999 after 2.33 seconds
+[0m17:26:33.986416 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5d38392d10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5d2afbf610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5d2afbfdf0>]}
+[0m17:26:33.986693 [debug] [MainThread]: Flushing usage events
+[0m17:26:49.242027 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f409a09ad70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f40986e7c40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f40986e7be0>]}
+
+
+============================== 17:26:49.268394 | 4a1f4dae-5f37-4cb1-b444-92a983ccc74f ==============================
+[0m17:26:49.268394 [info ] [MainThread]: Running with dbt=1.6.3
+[0m17:26:49.268815 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/home/lap10/Desktop/InvX/logs', 'debug': 'False', 'profiles_dir': '/home/lap10/Desktop/InvX', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt run --models dtc_dbt', 'send_anonymous_usage_stats': 'True'}
+[0m17:26:49.385690 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4a1f4dae-5f37-4cb1-b444-92a983ccc74f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f40991c5c90>]}
+[0m17:26:49.391212 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4a1f4dae-5f37-4cb1-b444-92a983ccc74f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f40949be320>]}
+[0m17:26:49.391761 [info ] [MainThread]: Registered adapter: snowflake=1.6.3
+[0m17:26:49.396782 [debug] [MainThread]: checksum: 800ab10c53db38b54e69cd328777f0c48b6374b8a89466e8ff54aa9acb452b75, vars: {}, profile: , target: , version: 1.6.3
+[0m17:26:49.408799 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m17:26:49.409327 [debug] [MainThread]: Partial parsing: updated file: invx1://models/example/dtc_dbt.sql
+[0m17:26:49.434062 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '4a1f4dae-5f37-4cb1-b444-92a983ccc74f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f40930780d0>]}
+[0m17:26:49.440017 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '4a1f4dae-5f37-4cb1-b444-92a983ccc74f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f409313ded0>]}
+[0m17:26:49.440441 [info ] [MainThread]: Found 5 models, 0 sources, 0 exposures, 0 metrics, 372 macros, 0 groups, 0 semantic models
+[0m17:26:49.440710 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4a1f4dae-5f37-4cb1-b444-92a983ccc74f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f409313de70>]}
+[0m17:26:49.441481 [info ] [MainThread]: 
+[0m17:26:49.442004 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m17:26:49.442852 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_INVX_DATABASE'
+[0m17:26:49.451318 [debug] [ThreadPool]: Using snowflake connection "list_INVX_DATABASE"
+[0m17:26:49.451742 [debug] [ThreadPool]: On list_INVX_DATABASE: /* {"app": "dbt", "dbt_version": "1.6.3", "profile_name": "invx1", "target_name": "dev", "connection_name": "list_INVX_DATABASE"} */
+show terse schemas in database INVX_DATABASE
+    limit 10000
+[0m17:26:49.451963 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:26:50.228968 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1.0 seconds
+[0m17:26:50.231041 [debug] [ThreadPool]: On list_INVX_DATABASE: Close
+[0m17:26:50.334919 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_INVX_DATABASE, now list_INVX_DATABASE_CLEANED_DATA)
+[0m17:26:50.345441 [debug] [ThreadPool]: Using snowflake connection "list_INVX_DATABASE_CLEANED_DATA"
+[0m17:26:50.345726 [debug] [ThreadPool]: On list_INVX_DATABASE_CLEANED_DATA: /* {"app": "dbt", "dbt_version": "1.6.3", "profile_name": "invx1", "target_name": "dev", "connection_name": "list_INVX_DATABASE_CLEANED_DATA"} */
+show terse objects in INVX_DATABASE.CLEANED_DATA limit 10000
+[0m17:26:50.345926 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m17:26:50.668982 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 0.0 seconds
+[0m17:26:50.672357 [debug] [ThreadPool]: On list_INVX_DATABASE_CLEANED_DATA: Close
+[0m17:26:50.768888 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4a1f4dae-5f37-4cb1-b444-92a983ccc74f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f40930b7d30>]}
+[0m17:26:50.770596 [info ] [MainThread]: Concurrency: 10 threads (target='dev')
+[0m17:26:50.771411 [info ] [MainThread]: 
+[0m17:26:50.776456 [debug] [Thread-1 (]: Began running node model.invx1.dtc_dbt
+[0m17:26:50.777153 [info ] [Thread-1 (]: 1 of 1 START sql table model CLEANED_DATA.dtc_dbt .............................. [RUN]
+[0m17:26:50.777889 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_INVX_DATABASE_CLEANED_DATA, now model.invx1.dtc_dbt)
+[0m17:26:50.778299 [debug] [Thread-1 (]: Began compiling node model.invx1.dtc_dbt
+[0m17:26:50.783780 [debug] [Thread-1 (]: Writing injected SQL for node "model.invx1.dtc_dbt"
+[0m17:26:50.784443 [debug] [Thread-1 (]: Timing info for model.invx1.dtc_dbt (compile): 17:26:50.778558 => 17:26:50.784272
+[0m17:26:50.784839 [debug] [Thread-1 (]: Began executing node model.invx1.dtc_dbt
+[0m17:26:50.803121 [debug] [Thread-1 (]: Writing runtime sql for node "model.invx1.dtc_dbt"
+[0m17:26:50.804253 [debug] [Thread-1 (]: Using snowflake connection "model.invx1.dtc_dbt"
+[0m17:26:50.804592 [debug] [Thread-1 (]: On model.invx1.dtc_dbt: /* {"app": "dbt", "dbt_version": "1.6.3", "profile_name": "invx1", "target_name": "dev", "node_id": "model.invx1.dtc_dbt"} */
+create or replace transient table INVX_DATABASE.CLEANED_DATA.dtc_dbt
+         as
+        (
+
+WITH source_data AS (
+  SELECT
+    "MAKE" AS BRAND,
+    "VEHICLE RC" AS REGISTRATION_NUMBER,
+    "MODEL" AS MODEL,
+    "KEY COUNT" AS VEHICLE_KEYS_AVAILABLE_COUNT,
+    "CHASIS NO" AS VEHICLE_CHASIS_NO,
+    "ENGINE NO" AS VEHICLE_ENGINE_NO,
+    "RETAIL / WHOLESALE" AS VEHICLE_TO_RETAIL_OR_WHOLESALE,
+    "RC AVAILABILITY AT SOURCE" AS RC_AVAILABILITY_AT_SOURCE,
+    "DTC NAME" AS DTC_CENTER_NAME,
+    "DTC IN DATE(DD/MM/YY)" AS DTC_VEHICLE_ARRIVED_DATE,
+    "YEAR" AS VEHICLE_MANUFACTURED_YEAR,
+    "L2 DATE (DD/MM/YY)" AS L2_INSPECTION_DATE,
+    "ESTIMATION DATE" AS ESTIMATED_REFURB_DATE,
+    "APPROVAL DATE" AS ESTIMATION_APPROVAL_DATE,
+    "BAY ALLOCATION" AS BAY_ALLOCATION_DATE,
+    "PRODUCTION DATE" AS REFURB_COMPLETED_DATE,
+    "DTC OUT DATE" AS DTC_OUT_DATE,
+    "ESTIMATED SPARES COUNT" AS ESTIMATED_SPARES_COUNT,
+    "ESTIMATION AMOUNT" AS ESTIMATED_REFURB_COST,
+    "WORK END" AS WORK_END_DATE,
+    "TECHNICIAN NAME (END WORK)" AS TECHNICIAN_NAME,
+    "LUBRICATIONS :" AS LUBRICATIONS_COST,
+    "BATTERY :" AS BATTERY_COST,
+    "TIRE :" AS TIRE_COST,
+    "SPARES:" AS SPARES_COST,
+    "PAINT, TINKER, & OTHERS :" AS PAINT_TINKER_OTHERS_COST,
+    "OUTSIDE WORK :" AS OUTSIDE_WORK_COST,
+    "TOTAL RF COST:" AS TOTAL_REFURB_COST,
+    "STATUS" AS REFURBISHMENT_STATUS,
+    "REMARKS" AS REFURB_REMARKS
+  FROM RAW_DATA.DTC
+
+)
+
+SELECT *
+FROM source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+        );
+[0m17:26:50.804875 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:26:52.190770 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.0 seconds
+[0m17:26:52.205294 [debug] [Thread-1 (]: Timing info for model.invx1.dtc_dbt (execute): 17:26:50.785026 => 17:26:52.205160
+[0m17:26:52.205661 [debug] [Thread-1 (]: On model.invx1.dtc_dbt: Close
+[0m17:26:52.304592 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4a1f4dae-5f37-4cb1-b444-92a983ccc74f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f40930b5810>]}
+[0m17:26:52.306088 [info ] [Thread-1 (]: 1 of 1 OK created sql table model CLEANED_DATA.dtc_dbt ......................... [[32mSUCCESS 1[0m in 1.53s]
+[0m17:26:52.307294 [debug] [Thread-1 (]: Finished running node model.invx1.dtc_dbt
+[0m17:26:52.311507 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:26:52.312443 [debug] [MainThread]: Connection 'model.invx1.dtc_dbt' was properly closed.
+[0m17:26:52.313293 [info ] [MainThread]: 
+[0m17:26:52.314245 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 2.87 seconds (2.87s).
+[0m17:26:52.315802 [debug] [MainThread]: Command end result
+[0m17:26:52.361041 [info ] [MainThread]: 
+[0m17:26:52.361423 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:26:52.361663 [info ] [MainThread]: 
+[0m17:26:52.361888 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m17:26:52.362286 [debug] [MainThread]: Command `dbt run` succeeded at 17:26:52.362205 after 3.12 seconds
+[0m17:26:52.362585 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f409a09ad70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4090eb2500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f40949bc1f0>]}
+[0m17:26:52.362871 [debug] [MainThread]: Flushing usage events

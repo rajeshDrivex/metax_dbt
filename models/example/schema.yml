@@ -7,17 +7,23 @@ models:
     depends_on:
       - source: RAW_DATA.CONFIRMATIONS
 
-models:
-  - name: My_second_dbt
+  - name: DTC
     description: "A starter dbt model"
     depends_on:
-      - source: RAW_DATA.CONFIRMATIONS
+      - source: RAW_DATA.DTC
 
-  # - name: my_second_dbt_model
-  #   description: "A starter dbt model"
-  #   columns:
-  #     - name: id
-  #       description: "The primary key for this table"
-  #       tests:
-  #         - unique
-  #         - not_null
+  - name: SALES
+    description: "A starter dbt model"
+    depends_on:
+      - source: RAW_DATA.VEH MAPING LIST
+
+  - name: DOCUMENTATION
+    description: "A starter dbt model"
+    depends_on:
+      - source: RAW_DATA.DOCUMENTATION
+
+  - name: LOGISTICS
+    description: "A starter dbt model"
+    depends_on:
+      - source: RAW_DATA.LOGISTICS
+  
