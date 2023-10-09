@@ -2,7 +2,7 @@
   
     
 
-        create or replace transient table AIRBYTE_DATABASE.AIRBYTE_SCHEMA_DBT.My_second_dbt
+        create or replace transient table INVX_DATABASE.CLEANED_DATA.My_second_dbt
          as
         (/*
     Welcome to your first dbt model!
