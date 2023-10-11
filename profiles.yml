@@ -5,10 +5,10 @@ invx1:
       type: snowflake
       account: xo40924.ap-south-1.aws
       # User/password auth
-      user: mahesh1998
-      password: Mahesh1998@
+      user: INVX_USER
+      password: password
 
-      role: ACCOUNTADMIN
+      role: INVX_ROLE
       database: INVX_DATABASE
       warehouse: INVX_WAREHOUSE
       schema: CLEANED_DATA
