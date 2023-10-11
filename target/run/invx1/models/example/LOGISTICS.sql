@@ -1,19 +1,24 @@
 
--- configuring data type to table
+  
+    
 
-{{config(materialized = 'table')}}
+        create or replace transient table INVX_DATABASE.CLEANED_DATA.LOGISTICS
+         as
+        (-- configuring data type to table
+
+
 
 with source_data as (
 SELECT
-    "DELIVERY DATE" AS VEH_DELIVERY_DATA_DTC,
+    "DELIVERY DATE" AS VEH_DELIVERY_DATE_DTC,
     "ETA" AS EXPECTED_TIME_ARRIVAL,
     "MONTH/YEAR" AS VEHICLE_PROCURED_MONTH,
     "CONSIGNMENT" AS CONSIGNMENT,
     "PLATFORM" AS PLATFORM_VEH_MOVING_TO,
-    "MOVEMENT TYPE" AS VEH_MOVEMENT_TYEP,
+    "MOVEMENT TYPE" AS VEH_MOVEMENT_TYPE,
     "PICK-UP LOCATION" AS VEHICLE_PICKUP_LOCATION,
     "DROP LOCATION" AS VEHICLE_DROP_LOCATION,
-    "REG #" AS REGISTRATION_NUMBER,
+    UPPER("REG #") AS REGISTRATION_NUMBER,
     -- "MODEL" AS MODEL,
     -- "CHASSIS NUMBER" AS VEHICLE_CHASIS_NUMBER,
     -- "ENGINE NUMBER" AS VEHICLE_ENGINE_NUMBER,
@@ -31,5 +36,10 @@ SELECT
     FROM RAW_DATA.LOGISTICS
 )
 
--- storing data to desination
-SELECT * FROM source_data
+
+
+SELECT *
+FROM source_data
+        );
+      
+  

@@ -1,4 +1,3 @@
-
 /*
     Welcome to your first dbt model!
     Did you know that you can also configure models directly within SQL files?
@@ -7,13 +6,11 @@
     Try changing "table" to "view" below
 */
 
-{{ config(
-  materialized='table',
-) }}
+
 
 WITH source_data AS (
   SELECT
-    "REG.NO" AS Registration_number,
+    UPPER("REG.NO") AS REGISTRATION_NUMBER,
     "MAKE" AS BRAND,
     "MODEL" AS MODEL,
     "MONTH" AS VEHICLE_PROCURED_MONTH,
