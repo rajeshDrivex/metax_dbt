@@ -2,7 +2,7 @@
   
     
 
-        create or replace transient table INVX_DATABASE.CLEANED_DATA.DTC
+        create or replace transient table INVX_DATABASE.CLEANED_DATA1.DTC
          as
         (
 

@@ -1,29 +1,61 @@
 
-version: 2
+# version: 2
 
-models:
-  - name: PROCUREMENT
-    description: "A starter dbt model"
-    depends_on:
-      - source: RAW_DATA.CONFIRMATIONS
+# models:
+#   - name: PROCUREMENT
+#     description: "A starter dbt model"
+#     depends_on:
+#       - source: RAW_DATA.CONFIRMATIONS
 
-  - name: DTC
-    description: "A starter dbt model"
-    depends_on:
-      - source: RAW_DATA.DTC
+#   - name: DTC
+#     description: "A starter dbt model"
+#     depends_on:
+#       - source: RAW_DATA.DTC
 
-  - name: SALES
-    description: "A starter dbt model"
-    depends_on:
-      - source: RAW_DATA.VEH MAPING LIST
+#   - name: SALES
+#     description: "A starter dbt model"
+#     depends_on:
+#       - source: RAW_DATA.VEH MAPING LIST
 
-  - name: DOCUMENTATION
-    description: "A starter dbt model"
-    depends_on:
-      - source: RAW_DATA.DOCUMENTATION
+#   - name: DOCUMENTATION
+#     description: "A starter dbt model"
+#     depends_on:
+#       - source: RAW_DATA.DOCUMENTATION
 
-  - name: LOGISTICS
-    description: "A starter dbt model"
-    depends_on:
-      - source: RAW_DATA.LOGISTICS
+#   - name: LOGISTICS
+#     description: "A starter dbt model"
+#     depends_on:
+#       - source: RAW_DATA.LOGISTICS
   
+# version: 2
+
+# models:
+#   - name: PROCUREMENT
+#     depends_on:
+#       - source: RAW_DATA.CONFIRMATIONS
+#     description: This table has basic information about a customer, as well as some derived facts based on a customer's orders
+
+#     columns:
+#       - name: REGISTRATION_NUMBER
+#         description: This is a unique identifier for a customer
+#         tests:
+#           - unique
+#           - not_null
+
+ 
+#   - name: LOGISTICS
+#     depends_on:
+#       - source: RAW_DATA.LOGISTICS
+#     description: This table has basic information about orders, as well as some derived facts based on payments
+
+#     columns:
+
+#       - name: REGISTRATION_NUMBER
+#         description: Foreign key to the customers table
+#         tests:
+#           - not_null
+#           - relationships:
+#               to: ref('PROCUREMENT')
+#               field: REGISTRATION_NUMBER
+
+    

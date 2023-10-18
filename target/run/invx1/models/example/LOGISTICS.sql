@@ -2,7 +2,7 @@
   
     
 
-        create or replace transient table INVX_DATABASE.CLEANED_DATA.LOGISTICS
+        create or replace transient table INVX_DATABASE.CLEANED_DATA1.LOGISTICS
          as
         (-- configuring data type to table
 
