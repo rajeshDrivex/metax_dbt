@@ -3,14 +3,14 @@ invx1:
   outputs:
     dev:
       type: snowflake
-      account: xo40924.ap-south-1.aws
+      account: hg51957.ap-south-1.aws
       # User/password auth
-      user: INVX_USER
+      user: METAX_USER
       password: password
 
-      role: INVX_ROLE
-      database: INVX_DATABASE
-      warehouse: INVX_WAREHOUSE
+      role: METAX_ROLE
+      database: METAX_DATABASE
+      warehouse: METAX_WAREHOUSE
       schema: CLEANED_DATA
       threads: 10
       client_session_keep_alive: False
